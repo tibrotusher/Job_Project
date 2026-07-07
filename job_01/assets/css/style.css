@@ -4,6 +4,15 @@
   box-sizing: border-box;
 }
 
+#breadcrumb {
+  background: url(../img/breadcrumb.jpg);
+  background-repeat: no-repeat;
+  height: 40vh;
+  background-size: cover;
+  color: white;
+  background-position: center;
+}
+
 .text-break {
   white-space: pre-line;
 }

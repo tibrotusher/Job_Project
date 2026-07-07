@@ -5,7 +5,7 @@
 }
 
 #breadcrumb {
-  background: url(../img/breadcrumb.jpg);
+  background: url('../img/breadcrumb.jpg');
   background-repeat: no-repeat;
   height: 40vh;
   background-size: cover;
@@ -18,9 +18,9 @@
 }
 
 footer {
-  background: rgba(131, 149, 167, 0.4) url(../img/footer.jpg);
+  background: rgba(0, 0, 0, 0.4) url('../img/footer.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   height: 60vh;
-  mix-blend-mode: multiply;
+  background-blend-mode: multiply;
 }

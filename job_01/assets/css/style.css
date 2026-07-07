@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.text-break {
+  white-space: pre-line;
+}
+
+footer {
+  background: rgba(131, 149, 167, 0.4) url(../img/footer.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 60vh;
+  mix-blend-mode: multiply;
+}

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ecommerce</title>
+
+  <!-- favicon link here -->
+  <link rel="icon" href="" type="image/x-icon">
+
+  <!-- bootstrap icon link here -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+  <!-- bootstrap link here -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+  <!-- custom css link here -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+  <header id="top_nav">
+    <!-- Custom Header Top Bar -->
+    <div class="bg-dark text-light py-2 fs-7">
+      <div class="container d-flex justify-content-between align-items-center">
+        <!-- Contact Info -->
+        <div class="d-flex gap-3 align-items-center">
+          <span><i class="bi bi-envelope me-1 text-primary"></i> tibrotusher.du@gmail.com</span>
+          <span class="d-none d-md-inline"><i class="bi bi-telephone me-1 text-primary"></i> +8801892577894</span>
+        </div>
+        <!-- Social & Auth -->
+        <div class="d-flex gap-3 align-items-center">
+          <div class="d-none d-sm-flex gap-2">
+            <a href="#" class="text-light text-decoration-none"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="text-light text-decoration-none"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" class="text-light text-decoration-none"><i class="bi bi-youtube"></i></a>
+          </div>
+          <div class="vr mx-1 d-none d-sm-block"></div>
+          <a href="#" class="text-light text-decoration-none fw-bold">Login / Register</a>
+        </div>
+      </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg bg-primary px-3 sticky-md-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold text-primary" href="#"><img src="./assets/img/logo (1).png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link fs-5 text-light active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-5 text-light" href="product.html">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-5 text-light" href="product-detail.html">Products Details</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-5 text-light" href="sign-up.html">Signup</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-5 text-light" href="login.html">Login</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle fs-5 text-light" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Wishlist
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Favourite</a></li>
+                <li><a class="dropdown-item" href="#">Like Products</a></li>
+                <li><a class="dropdown-item" href="#">Watch Later</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-primary" type="submit">Search</button>
+          </form>
+          <div class="button">
+            <button class="btn btn-white btn-lg text-light"><i class="bi bi-cart-check-fill"></i>Add to cart</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- breadcrumb section here -->
+  <section id="breadcrumb">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="breadcrumbs-caption text-center">
+          <text-uppercase class="text-light fs-3 fw-bold">Login Page</text-uppercase>
+          <div class="breadcrumbs-caption-btn pt-3">
+            <a href="" class="text-uppercase text-decoration-none text-light fw-bold"><i
+                class="bi bi-house-door-fill"></i>home</a>
+            <span class=" mx-2 text-success">/</span>
+            <a href="" class="text-uppercase text-decoration-none fw-bold text-black">Login</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- login section here -->
+  <section id="login_section" class="py-5">
+    <div class="container">
+      <!-- Centered Login Form with Validation & Toast Popup -->
+      <div class="container d-flex justify-content-center align-items-center min-vh-100 py-5">
+        <div class="card shadow-lg border-0 w-100 rounded-4" style="max-width: 450px;">
+          <div class="card-body p-4 p-md-5">
+            <div class="text-center mb-4">
+              <div
+                class="bg-primary-subtle text-primary rounded-circle d-inline-flex align-items-center justify-content-center mb-3"
+                style="width: 60px; height: 60px;">
+                <i class="bi bi-shield-lock-fill fs-2"></i>
+              </div>
+              <h3 class="fw-bold">Secure Login</h3>
+              <p class="text-muted small">Enter your credentials to continue</p>
+            </div>
+
+            <form id="customLoginForm">
+              <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="usernameInput" placeholder="Username" required>
+                <label for="usernameInput"><i class="bi bi-person me-2 text-muted"></i>Username</label>
+              </div>
+              <div class="form-floating mb-3 position-relative">
+                <input type="password" class="form-control" id="passwordInput" placeholder="Password" required>
+                <label for="passwordInput"><i class="bi bi-lock me-2 text-muted"></i>Password</label>
+              </div>
+
+              <div class="d-flex justify-content-between align-items-center mb-4 small">
+                <div class="form-check">
+                  <input class="form-check-input shadow-none cursor-pointer" type="checkbox" value="" id="rememberMe">
+                  <label class="form-check-label text-muted cursor-pointer" for="rememberMe">Remember me</label>
+                </div>
+                <a href="#" class="text-primary text-decoration-none fw-medium">Forgot password?</a>
+              </div>
+
+              <button class="btn btn-primary w-100 py-3 fw-bold rounded-3 shadow-sm" type="submit">
+                Sign In <i class="bi bi-arrow-right ms-1"></i>
+              </button>
+            </form>
+
+            <div class="text-center mt-4 pt-3 border-top small text-muted">
+              Don't have an account? <a href="#" class="text-primary fw-bold text-decoration-none">Register Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Global Toast Container for Popup Notification -->
+      <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div id="loginSuccessToast" class="toast align-items-center text-bg-success border-0" role="alert"
+          aria-live="assertive" aria-atomic="true">
+          <div class="d-flex">
+            <div class="toast-body fw-medium">
+              <i class="bi bi-check-circle-fill me-2"></i> Authentication successful!
+            </div>
+            <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"
+              aria-label="Close"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Big Custom Footer -->
+  <footer class="bg-dark text-light pt-5 pb-4 mt-5">
+    <div class="container">
+      <div class="row gy-5">
+
+        <!-- Column 1: Brand & About -->
+        <div class="col-lg-4 col-md-6">
+          <h5 class="fw-bold text-white mb-3"><img src="./assets/img/logo (1).png" alt=""></h5>
+          <p class="text-secondary small mb-4">We provide high-quality digital solutions to help businesses grow and
+            scale
+            effectively. Innovate with us and reach new heights.</p>
+          <div class="d-flex gap-2">
+            <a href="#" class="btn btn-sm btn-outline-secondary rounded-circle"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="btn btn-sm btn-outline-secondary rounded-circle"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" class="btn btn-sm btn-outline-secondary rounded-circle"><i class="bi bi-linkedin"></i></a>
+            <a href="#" class="btn btn-sm btn-outline-secondary rounded-circle"><i class="bi bi-instagram"></i></a>
+          </div>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div class="col-lg-2 col-md-6">
+          <h6 class="text-white mb-3 text-uppercase fw-bold tracking-wide">Quick Links</h6>
+          <ul class="list-unstyled small text-secondary d-flex flex-column gap-2">
+            <li><a href="#" class="text-secondary text-decoration-none hover-white transition-all">Home</a></li>
+            <li><a href="#" class="text-secondary text-decoration-none hover-white transition-all">Our Services</a></li>
+            <li><a href="#" class="text-secondary text-decoration-none hover-white transition-all">Product Details</a>
+            </li>
+            <li><a href="#" class="text-secondary text-decoration-none hover-white transition-all">Contact Support</a>
+            </li>
+            <li><a href="#" class="text-secondary text-decoration-none hover-white transition-all">Privacy Policy</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Contact Info -->
+        <div class="col-lg-3 col-md-6">
+          <h6 class="text-white mb-3 text-uppercase fw-bold tracking-wide">Contact Info</h6>
+          <ul class="list-unstyled small text-secondary d-flex flex-column gap-3">
+            <li class="d-flex gap-3 align-items-start">
+              <i class="bi bi-geo-alt fs-5 text-primary"></i>
+              <span>DB Road, Gaibandha,<br>Rangpur</span>
+            </li>
+            <li class="d-flex gap-3 align-items-center">
+              <i class="bi bi-envelope fs-5 text-primary"></i>
+              <span>tibrotusher@gmail.com</span>
+            </li>
+            <li class="d-flex gap-3 align-items-center">
+              <i class="bi bi-telephone fs-5 text-primary"></i>
+              <span>+880 1892577894</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Newsletter -->
+        <div class="col-lg-3 col-md-6">
+          <h6 class="text-white mb-3 text-uppercase fw-bold tracking-wide">Newsletter</h6>
+          <p class="text-secondary small mb-3">Subscribe to receive updates, access to exclusive deals, and more.</p>
+          <form class="d-flex gap-2">
+            <input type="email" class="form-control bg-dark text-light border-secondary" placeholder="Email address"
+              required>
+            <button class="btn btn-primary" type="submit">Subscribe</button>
+          </form>
+          <div class="form-text text-secondary mt-2" style="font-size: 0.7rem;">We respect your privacy. No spam.</div>
+        </div>
+
+      </div>
+
+      <!-- Simple Footer Copyright -->
+      <hr class="border-secondary mt-5 mb-4">
+      <div class="row align-items-center">
+        <div class="col-md-6 text-center text-md-start small text-secondary mb-3 mb-md-0">
+          &copy; 2026 Ecommerce. All rights reserved.
+        </div>
+        <div class="col-md-6 text-center text-md-end small">
+          <a href="#" class="text-secondary text-decoration-none me-3 hover-white">Terms of Service</a>
+          <a href="#" class="text-secondary text-decoration-none hover-white">Privacy Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- bootstrap js link here -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+    integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

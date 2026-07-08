@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar .collapse .navbar-nav {
+  position: sticky;
+  top: 0;
+  z-index: 99;
+}
+
+#breadcrumb {
+  background: url('../img/breads.webp');
+  background-repeat: no-repeat;
+  height: 40vh;
+  background-size: cover;
+  color: white;
+  background-position: bottom;
+}
+
+#product_details .card .zoom-img {
+  transition: 0.3s;
+}
+
+#product_details .card .zoom-img:hover {
+  transform: scale(1.5);
+}
+.main {
+  margin: 0 auto;
+}

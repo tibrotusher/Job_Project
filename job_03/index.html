@@ -6,6 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Resturant</title>
 
+  <!-- google fonts link here -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
   <!-- bootstrap link here -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
@@ -18,29 +23,30 @@
 </head>
 
 <body>
-  <header id="header">
-    <!-- Custom Header Top Bar -->
-    <div class="bg-dark text-light py-2 fs-7">
-      <div class="container d-flex justify-content-between align-items-center">
-        <!-- Contact Info -->
-        <div class="d-flex gap-3 align-items-center">
-          <span><i class="bi bi-envelope me-1 text-primary"></i>tibrotusher@gmail.com</span>
-          <span class="d-none d-md-inline"><i class="bi bi-telephone me-1 text-primary"></i> +880 192577894</span>
+  <!-- Custom Header Top Bar -->
+  <div class="bg-dark text-light py-2 fs-7">
+    <div class="container d-flex justify-content-between align-items-center">
+      <!-- Contact Info -->
+      <div class="d-flex gap-3 align-items-center">
+        <span><i class="bi bi-envelope me-1 text-primary"></i>tibrotusher@gmail.com</span>
+        <span class="d-none d-md-inline"><i class="bi bi-telephone me-1 text-primary"></i> +880 192577894</span>
+      </div>
+      <!-- Social & Auth -->
+      <div class="d-flex gap-3 align-items-center">
+        <div class="d-none d-sm-flex gap-2">
+          <a href="#" class="text-light text-decoration-none"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="text-light text-decoration-none"><i class="bi bi-twitter-x"></i></a>
+          <a href="#" class="text-light text-decoration-none"><i class="bi bi-youtube"></i></a>
         </div>
-        <!-- Social & Auth -->
-        <div class="d-flex gap-3 align-items-center">
-          <div class="d-none d-sm-flex gap-2">
-            <a href="#" class="text-light text-decoration-none"><i class="bi bi-facebook"></i></a>
-            <a href="#" class="text-light text-decoration-none"><i class="bi bi-twitter-x"></i></a>
-            <a href="#" class="text-light text-decoration-none"><i class="bi bi-youtube"></i></a>
-          </div>
-          <div class="vr mx-1 d-none d-sm-block"></div>
-          <a href="#" class="text-light text-decoration-none fw-bold">Login / Register</a>
-          <a href="#" class="text-light text-decoration-none fw-bold">Reservation Link</a>
-        </div>
+        <div class="vr mx-1 d-none d-sm-block"></div>
+        <a href="#" class="text-light text-decoration-none fw-bold">Login / Register</a>
+        <a href="#" class="text-light text-decoration-none fw-bold">Reservation Link</a>
       </div>
     </div>
+  </div>
 
+  <!-- main navbar section here -->
+  <header id="header" class="sticky-lg-top">
     <!-- Custom Navigation Bar -->
     <nav class="navbar navbar-expand-lg bg-danger shadow-sm py-2">
       <div class="container">
@@ -71,43 +77,419 @@
     </nav>
   </header>
 
+  <!-- banner section here -->
+  <section class="banner_section">
+    <div class="container-fluid p-0">
+      <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./assets/img/banner-3.jpg" class="d-block w-100 dish-img" alt="">
+            <div class="carousel-caption">
+              <h5 class="text-uppercase">The meat burger</h5>
+              <p class="text-light fs-5">Smoked brisket, tender ribs, smoked sausage, bacon & cheddar
+                with lettuce,
+                tomato, house BBQ & ranch.
+              </p>
+              <div class="col-12 mt-4">
+                <button type="button" class="btn btn-danger w-25 rounded-pill py-3 fw-bold fs-5 shadow hover-lift"
+                  data-bs-toggle="modal" data-bs-target="#reservationModal">Book Table</button>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/img/banner-1.jpg" class="d-block w-100 dish-img" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="text-uppercase">The Bun</h5>
+              <p class="fs-5">Sliced buns (such as sesame, brioche, or potato rolls), usually toasted to
+                add flavor and
+                prevent sogginess.</p>
+              <div class="col-12 mt-4">
+                <button type="button" class="btn btn-danger w-25 rounded-pill py-3 fw-bold fs-5 shadow hover-lift"
+                  data-bs-toggle="modal" data-bs-target="#reservationModal">Book Table</button>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/img/banner.jpg" class="d-block w-100 dish-img" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="text-uppercase">Onions</h5>
+              <p class="fs-5">Sliced raw red onion for a sharp bite, or caramelized white onions for sweetness.</p>
+              <div class="col-12 mt-4">
+                <button type="button" class="btn btn-danger w-25 rounded-pill py-3 fw-bold fs-5 shadow hover-lift"
+                  data-bs-toggle="modal" data-bs-target="#reservationModal">Book Table</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Special Dishes Section -->
+  <section class="py-5 bg-light-subtle">
+    <div class="container py-4">
+
+      <div class="text-center mb-5">
+        <h6 class="text-danger fw-bold text-uppercase tracking-wide mb-2">Our Signature</h6>
+        <h2 class="display-6 fw-bold mb-0 font-serif">Special Dishes</h2>
+      </div>
+
+      <div class="row g-4">
+        <!-- Dish 1 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card border-0 shadow-sm rounded-4 h-100 hover-lift overflow-hidden position-relative">
+            <!-- Price Badge -->
+            <div class="position-absolute top-0 end-0 m-3 z-1">
+              <span class="badge bg-danger rounded-pill px-3 py-2 fs-6 shadow">.99</span>
+            </div>
+
+            <!-- Image -->
+            <div class="overflow-hidden" style="height: 240px;">
+              <img src="./assets/img/meat-burger.png" alt="Smoked BBQ Ribs"
+                class="img-fluid w-100 h-100 object-fit-cover dish-img">
+            </div>
+
+            <!-- Content -->
+            <div class="card-body p-4 p-xl-5 d-flex flex-column">
+              <!-- Stars -->
+              <div class="d-flex align-items-center mb-3 gap-1 text-warning small">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                  class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
+                <span class="text-muted ms-2">(120)</span>
+              </div>
+
+              <h4 class="fw-bold mb-3 font-serif">Meat Burger</h4>
+              <p class="text-muted mb-4 pb-2">Burger for the body is not enough there must be a burger for the soul.</p>
+
+              <a href="#" class="btn btn-outline-danger rounded-pill fw-bold w-100 mt-auto py-2 hover-danger-fill">Order
+                Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dish 2 (Featured) -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card border-0 shadow-sm rounded-4 h-100 hover-lift overflow-hidden position-relative">
+            <!-- Price Badge -->
+            <div class="position-absolute top-0 end-0 m-3 z-1">
+              <span class="badge bg-danger rounded-pill px-3 py-2 fs-6 shadow">.50</span>
+            </div>
+            <!-- Featured Badge -->
+            <div class="overflow-hidden" style="height: 240px;">
+              <img src="./assets/img/fish-burger.png" alt="Power Veggie Bowl"
+                class="img-fluid w-100 h-100 object-fit-cover dish-img">
+            </div>
+
+            <div class="card-body p-4 p-xl-5 d-flex flex-column">
+              <div class="d-flex align-items-center mb-3 gap-1 text-warning small">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                  class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                <span class="text-muted ms-2">(340)</span>
+              </div>
+
+              <h4 class="fw-bold mb-3 font-serif">Fish Burger</h4>
+              <p class="text-muted mb-4 pb-2">Life is like a burger the more you add to it, the better it becomes.</p>
+
+              <a href="#" class="btn btn-danger rounded-pill fw-bold w-100 mt-auto py-2 shadow-sm hover-lift">Order
+                Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dish 3 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card border-0 shadow-sm rounded-4 h-100 hover-lift overflow-hidden position-relative">
+            <div class="position-absolute top-0 end-0 m-3 z-1">
+              <span class="badge bg-danger rounded-pill px-3 py-2 fs-6 shadow">.99</span>
+            </div>
+
+            <div class="overflow-hidden" style="height: 240px;">
+              <img src="./assets/img/veggie-burger.png" alt="Classic Margherita"
+                class="img-fluid w-100 h-100 object-fit-cover dish-img">
+            </div>
+
+            <div class="card-body p-4 p-xl-5 d-flex flex-column">
+              <div class="d-flex align-items-center mb-3 gap-1 text-warning small">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                  class="bi bi-star-fill"></i><i class="bi bi-star"></i>
+                <span class="text-muted ms-2">(85)</span>
+              </div>
+
+              <h4 class="fw-bold mb-3 font-serif">Veggie Burger</h4>
+              <p class="text-muted mb-4 pb-2">Roses are red, violets are blue. The burger costs less than dinner for
+                two.</p>
+
+              <a href="#" class="btn btn-outline-danger rounded-pill fw-bold w-100 mt-auto py-2 hover-danger-fill">Order
+                Now</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Chef's Recommendation Carousel Section -->
+  <section class="bg-dark py-5 overflow-hidden position-relative">
+    <!-- Optional background pattern -->
+    <div class="position-absolute top-0 start-0 w-100 h-100 opacity-10"
+      style="background-image: url('pattern.png'); background-size: cover;"></div>
+
+    <div id="chefCarousel" class="carousel slide carousel-fade position-relative z-1" data-bs-ride="carousel">
+
+      <!-- Indicators -->
+      <div class="carousel-indicators mb-0 pb-3">
+        <button type="button" data-bs-target="#chefCarousel" data-bs-slide-to="0" class="active" aria-current="true"
+          aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#chefCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#chefCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+
+      <div class="carousel-inner">
+        <!-- Slide 1 -->
+        <div class="carousel-item active" data-bs-interval="6000">
+          <div class="container py-4 py-md-5">
+            <div class="row g-5 align-items-center">
+
+              <!-- Text Content -->
+              <div class="col-lg-5 offset-lg-1 order-2 order-lg-1 text-center text-lg-start z-1">
+                <h6 class="text-warning fw-bold text-uppercase tracking-wide mb-3">Chef's Pick of the Week</h6>
+                <h2 class="display-4 fw-bold text-white mb-4 font-serif">ORGINAL FISH BURGER</h2>
+                <p class="lead text-light opacity-75 mb-4 pb-2 fs-6 lh-lg">A standard fish burger is built around a
+                  crispy, breaded white fish fillet paired with tangy tartar sauce on a soft bun. Slowly cooked in wild
+                  mushroom
+                  broth, finished with aged Parmigiano-Reggiano, fresh herbs, and a drizzle of white truffle oil.</p>
+
+                <!-- Chef Info & Price -->
+                <div class="d-flex align-items-center justify-content-center justify-content-lg-start gap-4 mb-5">
+                  <div class="d-flex align-items-center gap-3">
+                    <img src="./assets/img/IMG-20250211-WA0010-removebg-preview.png" alt="Chef Mario"
+                      class="rounded-circle border border-2 border-warning"
+                      style="width: 50px; height: 50px; object-fit: cover;">
+                    <div class="text-start">
+                      <h6 class="text-white mb-0 fw-bold font-serif">Chef Tibro</h6>
+                      <small class="text-warning">Head Chef</small>
+                    </div>
+                  </div>
+                  <div class="vr bg-light opacity-25" style="height: 40px;"></div>
+                  <h3 class="text-white mb-0 fw-bold"><span class="fs-6 text-white-50">.00</span></h3>
+                </div>
+
+                <!-- Buttons -->
+                <div class="d-flex gap-3 justify-content-center justify-content-lg-start">
+                  <a href="#order" class="btn btn-warning rounded-pill px-4 py-2 fw-bold text-dark hover-lift">Order
+                    Now</a>
+                  <a href="#menu" class="btn btn-outline-light rounded-pill px-4 py-2 fw-bold hover-lift">View
+                    Details</a>
+                </div>
+              </div>
+
+              <!-- Image Visual -->
+              <div class="col-lg-6 order-1 order-lg-2 position-relative text-center">
+                <!-- Glow Effect -->
+                <div
+                  class="position-absolute top-50 start-50 translate-middle bg-warning rounded-circle opacity-25 d-none d-lg-block"
+                  style="width: 70%; height: 70%; filter: blur(60px); z-index: 0;"></div>
+
+                <!-- Dish Image (Rotating) -->
+                <img src="./assets/img/fish-burger.png" alt="Risotto"
+                  class="img-fluid rounded-circle shadow-lg position-relative z-1 spinning-plate"
+                  style="width: 80%; max-width: 450px; aspect-ratio: 1/1; object-fit: cover; border: 15px solid rgba(255,255,255,0.1);">
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <!-- Repeat .carousel-item for Slide 2, 3... -->
+        <div class="carousel-item active" data-bs-interval="6000">
+          <div class="container py-4 py-md-5">
+            <div class="row g-5 align-items-center">
+
+              <!-- Text Content -->
+              <div class="col-lg-5 offset-lg-1 order-2 order-lg-1 text-center text-lg-start z-1">
+                <h6 class="text-warning fw-bold text-uppercase tracking-wide mb-3">Chef's Pick of the Week</h6>
+                <h2 class="display-4 fw-bold text-white mb-4 font-serif">ORGINAL VEGGIE BURGER</h2>
+                <p class="lead text-light opacity-75 mb-4 pb-2 fs-6 lh-lg">A standard veggie burger is built around a
+                  crispy, breaded white fish fillet paired with tangy tartar sauce on a soft bun. Slowly cooked in wild
+                  mushroom
+                  broth, finished with aged Parmigiano-Reggiano, fresh herbs, and a drizzle of white truffle oil.</p>
+
+                <!-- Chef Info & Price -->
+                <div class="d-flex align-items-center justify-content-center justify-content-lg-start gap-4 mb-5">
+                  <div class="d-flex align-items-center gap-3">
+                    <img src="./assets/img/IMG-20250211-WA0010-removebg-preview.png" alt="Chef Mario"
+                      class="rounded-circle border border-2 border-warning"
+                      style="width: 50px; height: 50px; object-fit: cover;">
+                    <div class="text-start">
+                      <h6 class="text-white mb-0 fw-bold font-serif">Chef Tibro</h6>
+                      <small class="text-warning">Head Chef</small>
+                    </div>
+                  </div>
+                  <div class="vr bg-light opacity-25" style="height: 40px;"></div>
+                  <h3 class="text-white mb-0 fw-bold"><span class="fs-6 text-white-50">.00</span></h3>
+                </div>
+
+                <!-- Buttons -->
+                <div class="d-flex gap-3 justify-content-center justify-content-lg-start">
+                  <a href="#order" class="btn btn-warning rounded-pill px-4 py-2 fw-bold text-dark hover-lift">Order
+                    Now</a>
+                  <a href="#menu" class="btn btn-outline-light rounded-pill px-4 py-2 fw-bold hover-lift">View
+                    Details</a>
+                </div>
+              </div>
+
+              <!-- Image Visual -->
+              <div class="col-lg-6 order-1 order-lg-2 position-relative text-center">
+                <!-- Glow Effect -->
+                <div
+                  class="position-absolute top-50 start-50 translate-middle bg-warning rounded-circle opacity-25 d-none d-lg-block"
+                  style="width: 70%; height: 70%; filter: blur(60px); z-index: 0;"></div>
+
+                <!-- Dish Image (Rotating) -->
+                <img src="./assets/img/veggie-burger.png" alt="Risotto"
+                  class="img-fluid rounded-circle shadow-lg position-relative z-1 spinning-plate"
+                  style="width: 80%; max-width: 450px; aspect-ratio: 1/1; object-fit: cover; border: 15px solid rgba(255,255,255,0.1);">
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item active" data-bs-interval="6000">
+          <div class="container py-4 py-md-5">
+            <div class="row g-5 align-items-center">
+
+              <!-- Text Content -->
+              <div class="col-lg-5 offset-lg-1 order-2 order-lg-1 text-center text-lg-start z-1">
+                <h6 class="text-warning fw-bold text-uppercase tracking-wide mb-3">Chef's Pick of the Week</h6>
+                <h2 class="display-4 fw-bold text-white mb-4 font-serif">Tomato
+                  Original</h2>
+                <p class="lead text-light opacity-75 mb-4 pb-2 fs-6 lh-lg">Doloremque laudantium, totam rem aperiam,
+                  eaque ipsa quae ab illo inventore veritatis et quasi. Sed ut perspiciatis unde
+                  omnis iste natus error sit. Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                  accusantium.</p>
+
+                <!-- Chef Info & Price -->
+                <div class="d-flex align-items-center justify-content-center justify-content-lg-start gap-4 mb-5">
+                  <div class="d-flex align-items-center gap-3">
+                    <img src="./assets/img/IMG-20250211-WA0010-removebg-preview.png" alt="Chef Mario"
+                      class="rounded-circle border border-2 border-warning"
+                      style="width: 50px; height: 50px; object-fit: cover;">
+                    <div class="text-start">
+                      <h6 class="text-white mb-0 fw-bold font-serif">Chef Tibro</h6>
+                      <small class="text-warning">Head Chef</small>
+                    </div>
+                  </div>
+                  <div class="vr bg-light opacity-25" style="height: 40px;"></div>
+                  <h3 class="text-white mb-0 fw-bold"><span class="fs-6 text-white-50">.00</span></h3>
+                </div>
+
+                <!-- Buttons -->
+                <div class="d-flex gap-3 justify-content-center justify-content-lg-start">
+                  <a href="#order" class="btn btn-warning rounded-pill px-4 py-2 fw-bold text-dark hover-lift">Order
+                    Now</a>
+                  <a href="#menu" class="btn btn-outline-light rounded-pill px-4 py-2 fw-bold hover-lift">View
+                    Details</a>
+                </div>
+              </div>
+
+              <!-- Image Visual -->
+              <div class="col-lg-6 order-1 order-lg-2 position-relative text-center">
+                <!-- Glow Effect -->
+                <div
+                  class="position-absolute top-50 start-50 translate-middle bg-warning rounded-circle opacity-25 d-none d-lg-block"
+                  style="width: 70%; height: 70%; filter: blur(60px); z-index: 0;"></div>
+
+                <!-- Dish Image (Rotating) -->
+                <img src="./assets/img/burger.png" alt="Risotto"
+                  class="img-fluid rounded-circle shadow-lg position-relative z-1 spinning-plate"
+                  style="width: 80%; max-width: 450px; aspect-ratio: 1/1; object-fit: cover; border: 15px solid rgba(255,255,255,0.1);">
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#chefCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#chefCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+
   <!-- footer section here -->
-  <footer id="footer_section" class=" bg-body py-5">
+  <footer id="footer_section" class=" bg-body py-5 overflow-hidden">
     <div class="container">
       <div class="footer-content text-center">
         <img src="./assets/img/logo-dark.png" alt="logo" class="w-25">
       </div>
-      <div class="row justify-content-center align-content-center g-4">
+      <div class="row py-5">
         <div class="col-md-6 text-center">
-          <h6 class="text-white mb-3 text-uppercase fw-bold tracking-wide">Contact Info</h6>
-          <ul class="list-unstyled small text-secondary">
-            <li class="text-center">
+          <h6 class="text-muted text-uppercase fw-bold tracking-wide">Contact Info</h6>
+          <ul class="list-unstyled text-dark">
+            <li class="pb-3">
               <i class="bi bi-geo-alt fs-5 text-primary"></i>
-              <span>123 Innovation Ave, Tech City,<br>New York 10001</span>
+              <span>DB Road, Gaibandha,<br> Rangpur</span>
             </li>
-            <li class="text-center">
+            <li class="pb-3">
               <i class="bi bi-envelope fs-5 text-primary"></i>
-              <span>support@brandlogo.com</span>
+              <span>tibrotusher@gmail.com.com</span>
             </li>
-            <li class="text-center">
+            <li class="pb-3">
               <i class="bi bi-telephone fs-5 text-primary"></i>
-              <span>+1 (555) 123-4567</span>
+              <span>+880 192577894</span>
+            </li>
+            <li class="pb-3">
+              <span class="fw-bold text-dark">E: bookings@grandburger.com</span>
             </li>
           </ul>
         </div>
 
         <div class="col-md-6 text-center">
-          <h6 class="text-white mb-3 text-uppercase fw-bold tracking-wide">Quick Links</h6>
-          <ul class="list-unstyled small text-secondary gap-2">
-            <li class="mb-2"><a href="#" class="text-secondary text-decoration-none hover-white transition-all"><i
-                  class="bi bi-facebook"></i> Facebook</a></li>
-            <li class="mb-2"><a href="#" class="text-secondary text-decoration-none hover-white transition-all"><i
-                  class="bi bi-twitter-x"></i> Tiwiter</a></li>
-            <li class="mb-2"><a href="#" class="text-secondary text-decoration-none hover-white transition-all"><i
-                  class="bi bi-whatsapp"></i> Whatsapp</a></li>
-            <li class="mb-2"><a href="#" class="text-secondary text-decoration-none hover-white transition-all"><i
-                  class="bi bi-instagram"></i> Instagram</a></li>
+          <h6 class="text-muted pb-3 text-uppercase fw-bold tracking-wide">Quick Links</h6>
+          <ul class="list-unstyled gap-2">
+            <li class="pb-3"><a href="#" class="text-dark text-decoration-none"><i
+                  class="bi bi-facebook fs-5 text-primary"></i> Facebook</a></li>
+            <li class="pb-3"><a href="#" class="text-dark text-decoration-none"><i
+                  class="bi bi-linkedin fs-5 text-info"></i> Linkedin</a></li>
+            <li class="pb-3"><a href="#" class="text-dark text-decoration-none"><i
+                  class="bi bi-whatsapp fs-5 text-success"></i> Whatsapp</a></li>
+            <li class="pb-3"><a href="#" class="text-dark text-decoration-none"><i
+                  class="bi bi-instagram fs-5 text-danger"></i> Instagram</a></li>
           </ul>
+        </div>
+      </div>
+      <div class="row py-5">
+        <div class="col-md-6 text-start">
+          <p class="text-dark fs-6">© Copyright Tibro Tusher All Right Reserved.</p>
+        </div>
+
+        <div class="col-md-6 text-end">
+          <p class="text-dark fw-bold fs-5"><em>Original</em></p>
         </div>
       </div>
     </div>

@@ -27,7 +27,7 @@
 
 <body>
   <!-- navbar section here -->
-  <header id="navbar" class="bg-warning-subtle">
+  <header id="navbar" class="bg-secondary-subtle sticky-md-top">
     <div class="container">
       <nav class="navbar navbar-expand-lg px-3 sticky-md-top">
         <div class="container-fluid">
@@ -40,7 +40,7 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link fs-5 text-black" aria-current="page" href="index.html">Home</a>
+                <a class="nav-link fs-5 text-black" href="index.html">Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link fs-5 text-black" href="document.html">Documents</a>
@@ -49,7 +49,7 @@
                 <a class="nav-link fs-5 text-black" href="interviews.html">Interviews</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link fs-5 text-black active" href="photograph.html">Photograph</a>
+                <a class="nav-link fs-5 text-black active" aria-current="page" href="photograph.html">Photograph</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link fs-5 text-black" href="contact.html">Contact</a>
@@ -79,83 +79,82 @@
   </section>
 
   <!-- Big Custom Footer -->
-  <footer class=" text-light pt-5 pb-4 mt-5">
+  <footer class="bg-dark text-light pt-5 pb-4 mt-5">
     <div class="container">
       <div class="row gy-5">
 
         <!-- Column 1: Brand & About -->
         <div class="col-lg-4 col-md-6">
-          <h5 class="fw-bold text-white mb-3">Libaretion War Archive</h5>
+          <img src="./assets/img/logo.png" alt="" class="img-fluid w-25 footer-img rounded">
           <p class="text-light small text-break mb-4">The Bangladesh Liberation War, which occurred in 1971, was a
             nine-month armed conflict between Bengali nationalists in
             East Pakistan (now Bangladesh) and the Pakistani military junta based in West Pakistan.</p>
           <div class="d-flex gap-2">
-            <ul class="list-unstyled small text-light d-flex flex-column gap-3">
-              <li class="d-flex gap-1 align-items-start">
-                <i class="bi bi-geo-alt fs-5 text-primary"></i>
-                <span>Sundarganj, Gaibandha, Rangpur</span>
-              </li>
-              <li class="d-flex gap-1 align-items-center">
-                <i class="bi bi-envelope fs-5 text-primary"></i>
-                <span>tibrotusher.du@gmail.com</span>
-              </li>
-              <li class="d-flex gap-1 align-items-center">
-                <i class="bi bi-telephone fs-5 text-primary"></i>
-                <span>01892...894</span>
-              </li>
-            </ul>
+            <a href="#" class="btn btn-sm btn-outline-secondary rounded-circle"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="btn btn-sm btn-outline-secondary rounded-circle"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" class="btn btn-sm btn-outline-secondary rounded-circle"><i class="bi bi-linkedin"></i></a>
+            <a href="#" class="btn btn-sm btn-outline-secondary rounded-circle"><i class="bi bi-instagram"></i></a>
           </div>
         </div>
 
         <!-- Column 2: Quick Links -->
         <div class="col-lg-2 col-md-6">
-          <h6 class="text-white mb-3 text-uppercase fw-bold tracking-wide">categories</h6>
+          <h6 class="text-white mb-3 text-uppercase fw-bold tracking-wide">Categories</h6>
           <ul class="list-unstyled small text-secondary d-flex flex-column gap-2">
-            <li><a href="#" class="text-light text-decoration-none hover-white transition-all">Documents</a></li>
-            <li><a href="#" class="text-light text-decoration-none hover-white transition-all">Our Services</a>
+            <li><a href="#" class="text-secondary text-decoration-none hover-white transition-all">About Us</a></li>
+            <li><a href="#" class="text-secondary text-decoration-none hover-white transition-all">Our Services</a></li>
+            <li><a href="#" class="text-secondary text-decoration-none hover-white transition-all">Portfolio
+                Projects</a>
             </li>
-            <li><a href="#" class="text-light text-decoration-none hover-white transition-all">Interviews</a>
+            <li><a href="#" class="text-secondary text-decoration-none hover-white transition-all">Contact Support</a>
             </li>
-            <li><a href="#" class="text-light text-decoration-none hover-white transition-all">Photographs</a>
+            <li><a href="#" class="text-secondary text-decoration-none hover-white transition-all">Privacy Policy</a>
             </li>
-            <li><a href="#" class="text-light text-decoration-none hover-white transition-all">Contact</a></li>
           </ul>
         </div>
 
         <!-- Column 3: Contact Info -->
         <div class="col-lg-3 col-md-6">
-          <h6 class="text-white mb-3 text-uppercase fw-bold tracking-wide">menu</h6>
-          <ul class="list-unstyled small text-light d-flex flex-column gap-3">
-            <li><a href="#" class="text-light text-decoration-none hover-white transition-all">Home</a></li>
-            <li><a href="#" class="text-light text-decoration-none hover-white transition-all">Shorts</a>
+          <h6 class="text-white mb-3 text-uppercase fw-bold tracking-wide">Contact Info</h6>
+          <ul class="list-unstyled small text-secondary d-flex flex-column gap-3">
+            <li class="d-flex gap-3 align-items-start">
+              <i class="bi bi-geo-alt fs-5 text-primary"></i>
+              <span>DB Road, Gaibandha,<br>Rangpur</span>
             </li>
-            <li><a href="#" class="text-light text-decoration-none hover-white transition-all">About</a>
+            <li class="d-flex gap-3 align-items-center">
+              <i class="bi bi-envelope fs-5 text-primary"></i>
+              <span>tibrotusher@gnail.com</span>
             </li>
-            <li><a href="#" class="text-light text-decoration-none hover-white transition-all">Contact</a>
+            <li class="d-flex gap-3 align-items-center">
+              <i class="bi bi-telephone fs-5 text-primary"></i>
+              <span>+880 192577894</span>
             </li>
           </ul>
         </div>
 
         <!-- Column 4: Newsletter -->
         <div class="col-lg-3 col-md-6">
-          <h6 class="text-light mb-3 text-capitalize fw-bold">social midea links</h6>
-          <a href="#" class="btn btn-sm btn-outline-light rounded-circle"><i class="bi bi-facebook"></i></a>
-          <a href="#" class="btn btn-sm btn-outline-light rounded-circle"><i class="bi bi-twitter-x"></i></a>
-          <a href="#" class="btn btn-sm btn-outline-light rounded-circle"><i class="bi bi-linkedin"></i></a>
-          <a href="#" class="btn btn-sm btn-outline-light rounded-circle"><i class="bi bi-instagram"></i></a>
+          <h6 class="text-white mb-3 text-uppercase fw-bold tracking-wide">Newsletter</h6>
+          <p class="text-secondary small mb-3">Subscribe to receive updates, access to exclusive deals, and more.</p>
+          <form class="d-flex gap-2">
+            <input type="email" class="form-control bg-dark text-light border-secondary" placeholder="Email address"
+              required>
+            <button class="btn btn-primary" type="submit">Subscribe</button>
+          </form>
+          <div class="form-text text-secondary mt-2" style="font-size: 0.7rem;">We respect your privacy. No spam.</div>
         </div>
 
       </div>
 
       <!-- Simple Footer Copyright -->
-      <hr class="border-light-subtle mt-5 mb-4">
+      <hr class="border-secondary mt-5 mb-4">
       <div class="row align-items-center">
-        <div class="col-md-6 text-center text-md-start small text-light mb-3 mb-md-0">
-          &copy; 2026 Libaretion War Archive of Bangladesh. All rights reserved.
+        <div class="col-md-6 text-center text-md-start small text-secondary mb-3 mb-md-0">
+          &copy; 2026 Tibro Tusher. All rights reserved.
         </div>
         <div class="col-md-6 text-center text-md-end small">
-          <a href="#" class="text-light text-decoration-none me-3 hover-white">Terms of Service</a>
-          <a href="#" class="text-light text-decoration-none hover-white">Privacy Policy</a>
+          <a href="#" class="text-secondary text-decoration-none me-3 hover-white">Terms of Service</a>
+          <a href="#" class="text-secondary text-decoration-none hover-white">Privacy Policy</a>
         </div>
       </div>
     </div>

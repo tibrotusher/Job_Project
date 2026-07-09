@@ -67,8 +67,8 @@
             <li class="nav-item"><a class="nav-link text-light" href="index.html">Home</a>
             </li>
             <li class="nav-item"><a class="nav-link text-light" href="menu.html">Menu</a></li>
+            <li class="nav-item"><a class="nav-link text-light" href="dish.html">Dish Details</a></li>
             <li class="nav-item"><a class="nav-link text-light" href="reservation.html">Reservation</a></li>
-            <li class="nav-item"><a class="nav-link text-light" href="about.html">About Us</a></li>
             <li class="nav-item"><a class="nav-link text-light" href="contact.html">Contact Us</a></li>
             <li class="nav-item"><a class="nav-link text-light active" aria-current="page" href="signup.html">Signup</a>
             </li>
@@ -78,29 +78,132 @@
     </nav>
   </header>
 
+  <!-- breadcrumb section here -->
+  <section id="breadcrumb">
+    <div class="container-fluid">
+      <div class="row">
+        <h3 class="text-uppercase fs-3 text-light">signup Page</h3>
+        <div class="breadcrumbs-caption-btn pt-3">
+          <a href="" class="text-uppercase text-decoration-none text-light fw-bold"><i
+              class="bi bi-house-door-fill"></i>home</a>
+          <span class=" mx-2">/</span>
+          <a href="" class="text-uppercase text-decoration-none fw-bold active">signup</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- signup section here -->
+  <section class="signup_section py-5 bg-light">
+    <div class="container d-flex flex-column justify-content-center align-items-center align-content-center">
+      <div class="card border-0 shadow-lg w-100 min-vh-100 bg-white p-5" style="max-width: 750px;">
+        <h3 class="fw-bold mb-4 text-center">Signup Here</h3>
+        <form id="contactForm" class="py-5 mx-auto">
+          <div class="row g-3 align-items-center justify-content-center main">
+            <div class="col-md-6">
+              <label class="form-label small fw-medium text-muted">First Name</label>
+              <input type="text" class="form-control" placeholder="first name" required>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label small fw-medium text-muted">Last Name</label>
+              <input type="text" class="form-control" placeholder="last name" required>
+            </div>
+            <div class="col-md-12">
+              <label class="form-label small fw-medium text-muted">Phone</label>
+              <input type="number" class="form-control" placeholder="number" required>
+            </div>
+            <div class="col-md-12">
+              <label class="form-label small fw-medium text-muted">Email Address</label>
+              <input type="email" class="form-control" placeholder="Enter your email" required>
+            </div>
+            <div class="col-md-12">
+              <label class="form-label small fw-medium text-muted">User Name</label>
+              <input type="name" class="form-control" placeholder="Enter username" required>
+            </div>
+            <div class="col-md-12">
+              <label class="form-label small fw-medium text-muted">Password</label>
+              <input type="password" class="form-control" placeholder="Enter password" required>
+            </div>
+          </div>
+          <div class="button pt-3">
+            <button class="btn btn-primary w-100 py-3 fw-bold rounded-3 shadow-sm" type="submit">
+              Sign Up <i class="bi bi-arrow-right ms-1"></i>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Centered Login Form-->
+  <section class="login_section bg-light">
+    <div class="container d-flex justify-content-center align-items-center min-vh-100 py-5">
+      <div class="card shadow-lg border-0 w-100 rounded-4" style="max-width: 450px;">
+        <div class="card-body p-4 p-md-5">
+          <div class="text-center mb-4">
+            <div
+              class="bg-primary-subtle text-primary rounded-circle d-inline-flex align-items-center justify-content-center mb-3"
+              style="width: 60px; height: 60px;">
+              <i class="bi bi-shield-lock-fill fs-2"></i>
+            </div>
+            <h3 class="fw-bold">Secure Login</h3>
+            <p class="text-muted small">Enter your credentials to continue</p>
+          </div>
+
+          <form id="customLoginForm">
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control" id="usernameInput" placeholder="Username" required>
+              <label for="usernameInput"><i class="bi bi-person me-2 text-muted"></i>Username</label>
+            </div>
+            <div class="form-floating mb-3 position-relative">
+              <input type="password" class="form-control" id="passwordInput" placeholder="Password" required>
+              <label for="passwordInput"><i class="bi bi-lock me-2 text-muted"></i>Password</label>
+            </div>
+
+            <div class="d-flex justify-content-between align-items-center mb-4 small">
+              <div class="form-check">
+                <input class="form-check-input shadow-none cursor-pointer" type="checkbox" value="" id="rememberMe">
+                <label class="form-check-label text-muted cursor-pointer" for="rememberMe">Remember me</label>
+              </div>
+              <a href="#" class="text-primary text-decoration-none fw-medium">Forgot password?</a>
+            </div>
+
+            <button class="btn btn-primary w-100 py-3 fw-bold rounded-3 shadow-sm" type="submit">
+              Sign In <i class="bi bi-arrow-right ms-1"></i>
+            </button>
+          </form>
+
+          <div class="text-center mt-4 pt-3 border-top small text-muted">
+            Don't have an account? <a href="#" class="text-primary fw-bold text-decoration-none">Register Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- footer section here -->
-  <footer id="footer_section" class=" bg-body py-5 overflow-hidden">
+  <footer id="footer_section" class=" bg-danger-subtle py-5 overflow-hidden">
     <div class="container">
       <div class="footer-content text-center">
         <img src="./assets/img/logo-dark.png" alt="logo" class="w-25">
       </div>
       <div class="row py-5">
         <div class="col-md-6 text-center">
-          <h6 class="text-muted text-uppercase fw-bold tracking-wide">Contact Info</h6>
+          <h6 class="text-muted text-uppercase fw-bold tracking-wide pb-3">Contact Info</h6>
           <ul class="list-unstyled text-dark">
-            <li class="pb-3">
+            <li class="">
               <i class="bi bi-geo-alt fs-5 text-primary"></i>
               <span>DB Road, Gaibandha,<br> Rangpur</span>
             </li>
-            <li class="pb-3">
+            <li class="">
               <i class="bi bi-envelope fs-5 text-primary"></i>
               <span>tibrotusher@gmail.com.com</span>
             </li>
-            <li class="pb-3">
+            <li class="">
               <i class="bi bi-telephone fs-5 text-primary"></i>
               <span>+880 192577894</span>
             </li>
-            <li class="pb-3">
+            <li class="">
               <span class="fw-bold text-dark">E: bookings@grandburger.com</span>
             </li>
           </ul>
@@ -109,24 +212,29 @@
         <div class="col-md-6 text-center">
           <h6 class="text-muted pb-3 text-uppercase fw-bold tracking-wide">Quick Links</h6>
           <ul class="list-unstyled gap-2">
-            <li class="pb-3"><a href="#" class="text-dark text-decoration-none"><i
-                  class="bi bi-facebook fs-5 text-primary"></i> Facebook</a></li>
-            <li class="pb-3"><a href="#" class="text-dark text-decoration-none"><i
-                  class="bi bi-linkedin fs-5 text-info"></i> Linkedin</a></li>
-            <li class="pb-3"><a href="#" class="text-dark text-decoration-none"><i
-                  class="bi bi-whatsapp fs-5 text-success"></i> Whatsapp</a></li>
-            <li class="pb-3"><a href="#" class="text-dark text-decoration-none"><i
-                  class="bi bi-instagram fs-5 text-danger"></i> Instagram</a></li>
+            <li class=""><a href="#" class="text-dark text-decoration-none"><i
+                  class="bi bi-facebook fs-5 text-primary"></i>
+                Facebook</a></li>
+            <li class=""><a href="#" class="text-dark text-decoration-none"><i
+                  class="bi bi-linkedin fs-5 text-info"></i>
+                Linkedin</a></li>
+            <li class=""><a href="#" class="text-dark text-decoration-none"><i
+                  class="bi bi-whatsapp fs-5 text-success"></i>
+                Whatsapp</a></li>
+            <li class=""><a href="#" class="text-dark text-decoration-none"><i
+                  class="bi bi-instagram fs-5 text-danger"></i>
+                Instagram</a></li>
           </ul>
         </div>
       </div>
-      <div class="row py-5">
-        <div class="col-md-6 text-start">
-          <p class="text-dark fs-6">© Copyright Tibro Tusher All Right Reserved.</p>
+      <hr class="border-secondary mb-4">
+      <div class="row align-items-center">
+        <div class="col-md-6 text-center text-md-start small text-secondary mb-3 mb-md-0">
+          &copy; © Copyright Tibro Tusher All Right Reserved.
         </div>
-
-        <div class="col-md-6 text-end">
-          <p class="text-dark fw-bold fs-5"><em>Original</em></p>
+        <div class="col-md-6 text-center text-md-end small">
+          <a href="#" class="text-secondary text-decoration-none me-3 hover-white">Terms of Service</a>
+          <a href="#" class="text-secondary text-decoration-none hover-white">Privacy Policy</a>
         </div>
       </div>
     </div>

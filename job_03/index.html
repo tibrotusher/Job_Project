@@ -67,8 +67,8 @@
             <li class="nav-item"><a class="nav-link text-light active" aria-current="page" href="index.html">Home</a>
             </li>
             <li class="nav-item"><a class="nav-link text-light" href="menu.html">Menu</a></li>
+            <li class="nav-item"><a class="nav-link text-light" href="dish.html">Dish Details</a></li>
             <li class="nav-item"><a class="nav-link text-light" href="reservation.html">Reservation</a></li>
-            <li class="nav-item"><a class="nav-link text-light" href="about.html">About Us</a></li>
             <li class="nav-item"><a class="nav-link text-light" href="contact.html">Contact Us</a></li>
             <li class="nav-item"><a class="nav-link text-light" href="signup.html">Signup</a></li>
           </ul>
@@ -164,7 +164,7 @@
             <!-- Image -->
             <div class="overflow-hidden" style="height: 240px;">
               <img src="./assets/img/meat-burger.png" alt="Smoked BBQ Ribs"
-                class="img-fluid w-100 h-100 object-fit-cover dish-img">
+                class="img-fluid w-100 h-100 object-fit-cover zoom-img">
             </div>
 
             <!-- Content -->
@@ -195,7 +195,7 @@
             <!-- Featured Badge -->
             <div class="overflow-hidden" style="height: 240px;">
               <img src="./assets/img/fish-burger.png" alt="Power Veggie Bowl"
-                class="img-fluid w-100 h-100 object-fit-cover dish-img">
+                class="img-fluid w-100 h-100 object-fit-cover zoom-img">
             </div>
 
             <div class="card-body p-4 p-xl-5 d-flex flex-column">
@@ -223,7 +223,7 @@
 
             <div class="overflow-hidden" style="height: 240px;">
               <img src="./assets/img/veggie-burger.png" alt="Classic Margherita"
-                class="img-fluid w-100 h-100 object-fit-cover dish-img">
+                class="img-fluid w-100 h-100 object-fit-cover zoom-img">
             </div>
 
             <div class="card-body p-4 p-xl-5 d-flex flex-column">
@@ -249,10 +249,6 @@
 
   <!-- Chef's Recommendation Carousel Section -->
   <section class="bg-dark py-5 overflow-hidden position-relative">
-    <!-- Optional background pattern -->
-    <div class="position-absolute top-0 start-0 w-100 h-100 opacity-10"
-      style="background-image: url('pattern.png'); background-size: cover;"></div>
-
     <div id="chefCarousel" class="carousel slide carousel-fade position-relative z-1" data-bs-ride="carousel">
 
       <!-- Indicators -->
@@ -419,7 +415,7 @@
                   style="width: 70%; height: 70%; filter: blur(60px); z-index: 0;"></div>
 
                 <!-- Dish Image (Rotating) -->
-                <img src="./assets/img/burger.png" alt="Risotto"
+                <img src="./assets/img/tomatos.png" alt="Risotto"
                   class="img-fluid rounded-circle shadow-lg position-relative z-1 spinning-plate"
                   style="width: 80%; max-width: 450px; aspect-ratio: 1/1; object-fit: cover; border: 15px solid rgba(255,255,255,0.1);">
               </div>
@@ -441,29 +437,154 @@
     </div>
   </section>
 
+  <!-- Testimonials Section -->
+  <section class="py-5 bg-light">
+    <div class="container py-4">
+
+      <!-- Header -->
+      <div class="text-center mb-5">
+        <h6 class="text-danger fw-bold text-uppercase tracking-wide mb-2">Testimonials</h6>
+        <h2 class="display-6 fw-bold mb-0 font-serif">What Our Guests Say</h2>
+      </div>
+
+      <!-- Reviews Grid -->
+      <div class="row g-4 text-start mb-5 pb-4">
+        <!-- Review 1 -->
+        <div class="col-md-4 col-lg-4">
+          <div class="card border-0 shadow-sm rounded-4 h-100 p-4 p-md-5 hover-lift bg-white position-relative">
+            <!-- Quote Icon -->
+            <i class="bi bi-quote position-absolute top-0 end-0 m-4 fs-1 text-light"></i>
+
+            <!-- Stars -->
+            <div class="d-flex align-items-center mb-3 text-warning">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            </div>
+
+            <h5 class="fw-bold font-serif mb-3">"Absolute Perfection!"</h5>
+            <p class="text-muted mb-4 fst-italic">"The Fish Burger is out of this world. The ambiance was
+              cozy, and the service was top-notch. Highly recommend!"</p>
+
+            <!-- Author -->
+            <div class="d-flex align-items-center mt-auto gap-3 border-top pt-3">
+              <img src="./assets/img/IMG-20250211-WA0010-removebg-preview.png" alt="Sarah Jenkins"
+                class="rounded-circle object-fit-cover shadow-sm" style="width: 45px; height: 45px;">
+              <div>
+                <h6 class="fw-bold mb-0">TUSHER</h6>
+                <small class="text-muted">Local Guide</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-lg-4">
+          <div class="card border-0 shadow-sm rounded-4 h-100 p-4 p-md-5 hover-lift bg-white position-relative">
+            <!-- Quote Icon -->
+            <i class="bi bi-quote position-absolute top-0 end-0 m-4 fs-1 text-light"></i>
+
+            <!-- Stars -->
+            <div class="d-flex align-items-center mb-3 text-warning">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            </div>
+
+            <h5 class="fw-bold font-serif mb-3">"A Hidden Gem"</h5>
+            <p class="text-muted mb-4 fst-italic">
+              "We stumbled upon this place by accident and what a find! The BBQ ribs fell right off the bone. We will
+              definitely be
+              back."</p>
+
+            <!-- Author -->
+            <div class="d-flex align-items-center mt-auto gap-3 border-top pt-3">
+              <img src="./assets/img/Untitled design.jpg" alt="Sarah Jenkins"
+                class="rounded-circle object-fit-cover shadow-sm" style="width: 45px; height: 45px;">
+              <div>
+                <h6 class="fw-bold mb-0">NIRJONA</h6>
+                <small class="text-muted">Food Critic</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-lg-4">
+          <div class="card border-0 shadow-sm rounded-4 h-100 p-4 p-md-5 hover-lift bg-white position-relative">
+            <!-- Quote Icon -->
+            <i class="bi bi-quote position-absolute top-0 end-0 m-4 fs-1 text-light"></i>
+
+            <!-- Stars -->
+            <div class="d-flex align-items-center mb-3 text-warning">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            </div>
+
+            <h5 class="fw-bold font-serif mb-3">"Best Date Night Ever"</h5>
+            <p class="text-muted mb-4 fst-italic">
+              "Booked a table for our anniversary. They accommodated our special requests and made the night
+              unforgettable. Thanks!"</p>
+
+            <!-- Author -->
+            <div class="d-flex align-items-center mt-auto gap-3 border-top pt-3">
+              <img src="./assets/img/IMG-20250211-WA0010-removebg-preview.png" alt="Sarah Jenkins"
+                class="rounded-circle object-fit-cover shadow-sm" style="width: 45px; height: 45px;">
+              <div>
+                <h6 class="fw-bold mb-0">TIBRO</h6>
+                <small class="text-muted">Regular Customer</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter Subscription -->
+  <section id="newsletter" class="py-5">
+    <div class="container">
+      <div
+        class="card border-0 bg-danger text-white rounded-4 shadow-lg overflow-hidden text-center p-4 p-md-5 position-relative">
+        <!-- Decorative Background Icon -->
+        <i class="bi bi-envelope-paper position-absolute top-50 start-0 translate-middle-y ms-n4 opacity-10"
+          style="font-size: 15rem; transform: rotate(-15deg);"></i>
+
+        <div class="position-relative z-1 mx-auto" style="max-width: 600px;">
+          <h3 class="fw-bold font-serif mb-3">Join Our Newsletter</h3>
+          <p class="text-white-50 mb-4">Subscribe to receive exclusive offers, event invites, and seasonal menu updates
+            directly in your inbox.</p>
+
+          <form class="d-flex gap-2 flex-column flex-sm-row mx-auto">
+            <input type="email" class="form-control rounded-pill py-3 px-4 border-0 shadow-none"
+              placeholder="Enter your email address" required>
+            <button type="submit"
+              class="btn btn-dark rounded-pill py-3 px-4 fw-bold hover-lift text-nowrap">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- footer section here -->
-  <footer id="footer_section" class=" bg-body py-5 overflow-hidden">
+  <footer id="footer_section" class=" bg-danger-subtle py-5 overflow-hidden">
     <div class="container">
       <div class="footer-content text-center">
         <img src="./assets/img/logo-dark.png" alt="logo" class="w-25">
       </div>
       <div class="row py-5">
         <div class="col-md-6 text-center">
-          <h6 class="text-muted text-uppercase fw-bold tracking-wide">Contact Info</h6>
+          <h6 class="text-muted text-uppercase fw-bold tracking-wide pb-3">Contact Info</h6>
           <ul class="list-unstyled text-dark">
-            <li class="pb-3">
+            <li class="">
               <i class="bi bi-geo-alt fs-5 text-primary"></i>
               <span>DB Road, Gaibandha,<br> Rangpur</span>
             </li>
-            <li class="pb-3">
+            <li class="">
               <i class="bi bi-envelope fs-5 text-primary"></i>
               <span>tibrotusher@gmail.com.com</span>
             </li>
-            <li class="pb-3">
+            <li class="">
               <i class="bi bi-telephone fs-5 text-primary"></i>
               <span>+880 192577894</span>
             </li>
-            <li class="pb-3">
+            <li class="">
               <span class="fw-bold text-dark">E: bookings@grandburger.com</span>
             </li>
           </ul>
@@ -472,24 +593,29 @@
         <div class="col-md-6 text-center">
           <h6 class="text-muted pb-3 text-uppercase fw-bold tracking-wide">Quick Links</h6>
           <ul class="list-unstyled gap-2">
-            <li class="pb-3"><a href="#" class="text-dark text-decoration-none"><i
-                  class="bi bi-facebook fs-5 text-primary"></i> Facebook</a></li>
-            <li class="pb-3"><a href="#" class="text-dark text-decoration-none"><i
-                  class="bi bi-linkedin fs-5 text-info"></i> Linkedin</a></li>
-            <li class="pb-3"><a href="#" class="text-dark text-decoration-none"><i
-                  class="bi bi-whatsapp fs-5 text-success"></i> Whatsapp</a></li>
-            <li class="pb-3"><a href="#" class="text-dark text-decoration-none"><i
-                  class="bi bi-instagram fs-5 text-danger"></i> Instagram</a></li>
+            <li class=""><a href="#" class="text-dark text-decoration-none"><i
+                  class="bi bi-facebook fs-5 text-primary"></i>
+                Facebook</a></li>
+            <li class=""><a href="#" class="text-dark text-decoration-none"><i
+                  class="bi bi-linkedin fs-5 text-info"></i>
+                Linkedin</a></li>
+            <li class=""><a href="#" class="text-dark text-decoration-none"><i
+                  class="bi bi-whatsapp fs-5 text-success"></i>
+                Whatsapp</a></li>
+            <li class=""><a href="#" class="text-dark text-decoration-none"><i
+                  class="bi bi-instagram fs-5 text-danger"></i>
+                Instagram</a></li>
           </ul>
         </div>
       </div>
-      <div class="row py-5">
-        <div class="col-md-6 text-start">
-          <p class="text-dark fs-6">© Copyright Tibro Tusher All Right Reserved.</p>
+      <hr class="border-secondary mb-4">
+      <div class="row align-items-center">
+        <div class="col-md-6 text-center text-md-start small text-secondary mb-3 mb-md-0">
+          &copy; © Copyright Tibro Tusher All Right Reserved.
         </div>
-
-        <div class="col-md-6 text-end">
-          <p class="text-dark fw-bold fs-5"><em>Original</em></p>
+        <div class="col-md-6 text-center text-md-end small">
+          <a href="#" class="text-secondary text-decoration-none me-3 hover-white">Terms of Service</a>
+          <a href="#" class="text-secondary text-decoration-none hover-white">Privacy Policy</a>
         </div>
       </div>
     </div>

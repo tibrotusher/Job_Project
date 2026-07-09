@@ -68,8 +68,8 @@
             </li>
             <li class="nav-item"><a class="nav-link text-light active" aria-current="page" href="menu.html">Menu</a>
             </li>
+            <li class="nav-item"><a class="nav-link text-light" href="dish.html">Dish Details</a></li>
             <li class="nav-item"><a class="nav-link text-light" href="reservation.html">Reservation</a></li>
-            <li class="nav-item"><a class="nav-link text-light" href="about.html">About Us</a></li>
             <li class="nav-item"><a class="nav-link text-light" href="contact.html">Contact Us</a></li>
             <li class="nav-item"><a class="nav-link text-light" href="signup.html">Signup</a></li>
           </ul>
@@ -78,137 +78,179 @@
     </nav>
   </header>
 
-  <!-- Special Dishes Section -->
-  <section class="py-5 bg-white">
-    <div class="container py-4">
+  <!-- breadcrumb section here -->
+  <section id="breadcrumb">
+    <div class="container-fluid">
+      <div class="row">
+        <h3 class="text-uppercase fs-3 text-light">Menu Page</h3>
+        <div class="breadcrumbs-caption-btn pt-3">
+          <a href="" class="text-uppercase text-decoration-none text-light fw-bold"><i
+              class="bi bi-house-door-fill"></i>home</a>
+          <span class=" mx-2">/</span>
+          <a href="" class="text-uppercase text-decoration-none fw-bold active">Menu</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-      <div class="text-center mb-5">
-        <h6 class="text-danger fw-bold text-uppercase tracking-wide mb-2">Our Signature</h6>
-        <h2 class="display-6 fw-bold mb-0 font-serif">Special Dishes</h2>
+  <!-- full menu section here -->
+  <section id="menu_section" class="py-5 bg-light">
+    <div class="container py-5">
+      <div class="content text-center font-poppins">
+        <h5 class="fw-bold text-danger text-uppercase">Discover</h5>
+        <h6 class="fw-bold fs-1 text-dark text-capitalize">Our menu</h6>
       </div>
 
-      <div class="row g-4">
-        <!-- Dish 1 -->
-        <div class="col-md-6 col-lg-4">
-          <div class="card border-0 shadow-sm rounded-4 h-100 hover-lift overflow-hidden position-relative">
-            <!-- Price Badge -->
-            <div class="position-absolute top-0 end-0 m-3 z-1">
-              <span class="badge bg-danger rounded-pill px-3 py-2 fs-6 shadow">.99</span>
-            </div>
-
-            <!-- Image -->
-            <div class="overflow-hidden" style="height: 240px;">
-              <img src="./assets/img/meat-burger.png" alt="Smoked BBQ Ribs"
-                class="img-fluid w-100 h-100 object-fit-cover dish-img">
-            </div>
-
-            <!-- Content -->
-            <div class="card-body p-4 p-xl-5 d-flex flex-column">
-              <!-- Stars -->
-              <div class="d-flex align-items-center mb-3 gap-1 text-warning small">
-                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                  class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
-                <span class="text-muted ms-2">(120)</span>
+      <div class="row g-4 pt-5">
+        <div class="col-md-4">
+          <div class="card border-0 shadow-sm rounded-4">
+            <div class="card-body">
+              <h5 class="fw-bold font-poppins mb-4 pb-3 border-bottom">Categories</h5>
+              <div class="d-flex flex-column g-2">
+                <button
+                  class="btn btn-danger text-start rounded-3 fw-bold py-3 px-4 hover-primary-light transition-all">Starter<span
+                    class="badge bg-white text-danger float-end">4</span></button>
+                <button
+                  class="btn btn-light text-start rounded-3 fw-bold py-3 px-4 hover-primary-light transition-all">Main
+                  Course<span class="badge bg-secondary float-end">8</span></button>
+                <button
+                  class="btn btn-light text-start rounded-3 fw-bold py-3 px-4 hover-primary-light transition-all">Desserts<span
+                    class="badge bg-secondary float-end">10</span></button>
+                <button
+                  class="btn btn-light text-start rounded-3 fw-bold py-3 px-4 hover-primary-light transition-all">Drinks<span
+                    class="badge bg-secondary float-end">12</span></button>
               </div>
-
-              <h4 class="fw-bold mb-3 font-serif">Meat Burger</h4>
-              <p class="text-muted mb-4 pb-2">Burger for the body is not enough there must be a burger for the soul.</p>
-
-              <a href="#" class="btn btn-outline-danger rounded-pill fw-bold w-100 mt-auto py-2 hover-danger-fill">Order
-                Now</a>
             </div>
           </div>
         </div>
 
-        <!-- Dish 2 (Featured) -->
-        <div class="col-md-6 col-lg-4">
-          <div class="card border-0 shadow-sm rounded-4 h-100 hover-lift overflow-hidden position-relative">
-            <!-- Price Badge -->
-            <div class="position-absolute top-0 end-0 m-3 z-1">
-              <span class="badge bg-danger rounded-pill px-3 py-2 fs-6 shadow">.50</span>
-            </div>
-            <!-- Featured Badge -->
-            <div class="position-absolute top-0 start-0 m-3 z-1">
-              <span class="badge bg-warning text-dark rounded-pill px-3 py-2 fw-bold shadow">Chef's Choice</span>
-            </div>
-
-            <div class="overflow-hidden" style="height: 240px;">
-              <img src="./assets/img/fish-burger.png" alt="Power Veggie Bowl"
-                class="img-fluid w-100 h-100 object-fit-cover dish-img">
-            </div>
-
-            <div class="card-body p-4 p-xl-5 d-flex flex-column">
-              <div class="d-flex align-items-center mb-3 gap-1 text-warning small">
-                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                  class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                <span class="text-muted ms-2">(340)</span>
+        <div class="col-md-8">
+          <div class="row g-2">
+            <div class="col-md-3">
+              <div class="card card-border border-0 shadow-sm h-100">
+                <div class="card-img rounded-4 overflow-hidden">
+                  <img src="./assets/img/starter.jpg" alt="" class="img-fluid rounded w-100 zoom-img">
+                </div>
+                <h4 class="fw-bold mt-3 px-3 font-poppins">Starter<span
+                    class=" badge bg-danger rounded-5 text-white float-end fw-bold">.120</span></h4>
+                <div class="button d-flex pb-3 px-2 g-2">
+                  <a href="#"
+                    class="btn btn-outline-danger rounded-5 fw-bold w-50 mt-auto py-2 hover-danger-fill d-block">Order
+                    Now</a>
+                  <a href="#"
+                    class="btn btn-outline-danger rounded-5 fw-bold w-50 mt-auto py-2 hover-danger-fill d-block"><i
+                      class="bi bi-cart-fill"></i> Add to cart</a>
+                </div>
               </div>
+            </div>
 
-              <h4 class="fw-bold mb-3 font-serif">Fish Burger</h4>
-              <p class="text-muted mb-4 pb-2">Life is like a burger the more you add to it, the better it becomes.</p>
+            <div class="col-md-3">
+              <div class="card card-border border-0 shadow-sm h-100">
+                <div class="card-img rounded-4 overflow-hidden">
+                  <img src="./assets/img/franz26-ai-generated-8317423_640.jpg" alt=""
+                    class="img-fluid rounded w-100 zoom-img">
+                </div>
+                <h4 class="fw-bold mt-3 px-3 font-poppins">Main Course<span
+                    class=" badge bg-danger rounded-5 text-white float-end fw-bold d-inline-block">.140</span></h4>
+                <div class="button d-flex pb-3 px-2 g-2">
+                  <a href="#"
+                    class="btn btn-outline-danger rounded-5 fw-bold w-50 mt-auto py-2 hover-danger-fill d-block">Order
+                    Now</a>
+                  <a href="#"
+                    class="btn btn-outline-danger rounded-5 fw-bold w-50 mt-auto py-2 hover-danger-fill d-block"><i
+                      class="bi bi-cart-fill"></i> Add to cart</a>
+                </div>
+              </div>
+            </div>
 
-              <a href="#" class="btn btn-danger rounded-pill fw-bold w-100 mt-auto py-2 shadow-sm hover-lift">Order
-                Now</a>
+            <div class="col-md-3">
+              <div class="card card-border border-0 shadow-sm h-100">
+                <div class="card-img rounded-4 overflow-hidden">
+                  <img src="./assets/img/desserts.jpg" alt="" class="img-fluid rounded w-100 zoom-img">
+                </div>
+                <h4 class="fw-bold mt-3 px-3 font-poppins">Desserts<span
+                    class=" badge bg-danger rounded-5 text-white float-end fw-bold">.90</span></h4>
+                <div class="button d-flex pb-3 px-2 g-2">
+                  <a href="#"
+                    class="btn btn-outline-danger rounded-5 fw-bold w-50 mt-auto py-2 hover-danger-fill d-block">Order
+                    Now</a>
+                  <a href="#"
+                    class="btn btn-outline-danger rounded-5 fw-bold w-50 mt-auto py-2 hover-danger-fill d-block"><i
+                      class="bi bi-cart-fill"></i> Add to cart</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <div class="card card-border border-0 shadow-sm h-100">
+                <div class="card-img rounded-4 overflow-hidden">
+                  <img src="./assets/img/suju_foto-drink-3534434_640.jpg" alt=""
+                    class="img-fluid rounded w-100 zoom-img">
+                </div>
+                <h4 class="fw-bold mt-3 px-3 font-poppins">Drinks<span
+                    class=" badge bg-danger rounded-5 text-white float-end fw-bold">.60</span></h4>
+                <div class="button d-flex pb-3 px-2 g-2">
+                  <a href="#"
+                    class="btn btn-outline-danger rounded-5 fw-bold w-50 mt-auto py-2 hover-danger-fill d-block">Order
+                    Now</a>
+                  <a href="#"
+                    class="btn btn-outline-danger rounded-5 fw-bold w-50 mt-auto py-2 hover-danger-fill d-block"><i
+                      class="bi bi-cart-fill"></i> Add to cart</a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
+      </div>
+    </div>
+  </section>
 
-        <!-- Dish 3 -->
-        <div class="col-md-6 col-lg-4">
-          <div class="card border-0 shadow-sm rounded-4 h-100 hover-lift overflow-hidden position-relative">
-            <div class="position-absolute top-0 end-0 m-3 z-1">
-              <span class="badge bg-danger rounded-pill px-3 py-2 fs-6 shadow">.99</span>
-            </div>
-
-            <div class="overflow-hidden" style="height: 240px;">
-              <img src="./assets/img/veggie-burger.png" alt="Classic Margherita"
-                class="img-fluid w-100 h-100 object-fit-cover dish-img">
-            </div>
-
-            <div class="card-body p-4 p-xl-5 d-flex flex-column">
-              <div class="d-flex align-items-center mb-3 gap-1 text-warning small">
-                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                  class="bi bi-star-fill"></i><i class="bi bi-star"></i>
-                <span class="text-muted ms-2">(85)</span>
-              </div>
-
-              <h4 class="fw-bold mb-3 font-serif">Veggie Burger</h4>
-              <p class="text-muted mb-4 pb-2">Roses are red, violets are blue. The burger costs less than dinner for
-                two.</p>
-
-              <a href="#" class="btn btn-outline-danger rounded-pill fw-bold w-100 mt-auto py-2 hover-danger-fill">Order
-                Now</a>
-            </div>
-          </div>
+  <!-- pagination section here -->
+  <section id="pagination" class="py-5 bg-light">
+    <div class="container">
+      <div class="card border-0 shadow-sm text-center">
+        <div class="d-flex flex-column align-items-center justify-content-center pt-3">
+          <nav aria-label="Page navigation example">
+            <ul class="pagination">
+              <li class="page-item disabled">
+                <a class="page-link">Previous</a>
+              </li>
+              <li class="page-item active"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#">Next</a>
+              </li>
+            </ul>
+          </nav>
         </div>
-
       </div>
     </div>
   </section>
 
   <!-- footer section here -->
-  <footer id="footer_section" class=" bg-body py-5 overflow-hidden">
+  <footer id="footer_section" class=" bg-danger-subtle py-5 overflow-hidden">
     <div class="container">
       <div class="footer-content text-center">
         <img src="./assets/img/logo-dark.png" alt="logo" class="w-25">
       </div>
       <div class="row py-5">
         <div class="col-md-6 text-center">
-          <h6 class="text-muted text-uppercase fw-bold tracking-wide">Contact Info</h6>
+          <h6 class="text-muted text-uppercase fw-bold tracking-wide pb-3">Contact Info</h6>
           <ul class="list-unstyled text-dark">
-            <li class="pb-3">
+            <li class="">
               <i class="bi bi-geo-alt fs-5 text-primary"></i>
               <span>DB Road, Gaibandha,<br> Rangpur</span>
             </li>
-            <li class="pb-3">
+            <li class="">
               <i class="bi bi-envelope fs-5 text-primary"></i>
               <span>tibrotusher@gmail.com.com</span>
             </li>
-            <li class="pb-3">
+            <li class="">
               <i class="bi bi-telephone fs-5 text-primary"></i>
               <span>+880 192577894</span>
             </li>
-            <li class="pb-3">
+            <li class="">
               <span class="fw-bold text-dark">E: bookings@grandburger.com</span>
             </li>
           </ul>
@@ -217,24 +259,29 @@
         <div class="col-md-6 text-center">
           <h6 class="text-muted pb-3 text-uppercase fw-bold tracking-wide">Quick Links</h6>
           <ul class="list-unstyled gap-2">
-            <li class="pb-3"><a href="#" class="text-dark text-decoration-none"><i
-                  class="bi bi-facebook fs-5 text-primary"></i> Facebook</a></li>
-            <li class="pb-3"><a href="#" class="text-dark text-decoration-none"><i
-                  class="bi bi-linkedin fs-5 text-info"></i> Linkedin</a></li>
-            <li class="pb-3"><a href="#" class="text-dark text-decoration-none"><i
-                  class="bi bi-whatsapp fs-5 text-success"></i> Whatsapp</a></li>
-            <li class="pb-3"><a href="#" class="text-dark text-decoration-none"><i
-                  class="bi bi-instagram fs-5 text-danger"></i> Instagram</a></li>
+            <li class=""><a href="#" class="text-dark text-decoration-none"><i
+                  class="bi bi-facebook fs-5 text-primary"></i>
+                Facebook</a></li>
+            <li class=""><a href="#" class="text-dark text-decoration-none"><i
+                  class="bi bi-linkedin fs-5 text-info"></i>
+                Linkedin</a></li>
+            <li class=""><a href="#" class="text-dark text-decoration-none"><i
+                  class="bi bi-whatsapp fs-5 text-success"></i>
+                Whatsapp</a></li>
+            <li class=""><a href="#" class="text-dark text-decoration-none"><i
+                  class="bi bi-instagram fs-5 text-danger"></i>
+                Instagram</a></li>
           </ul>
         </div>
       </div>
-      <div class="row py-5">
-        <div class="col-md-6 text-start">
-          <p class="text-dark fs-6">© Copyright Tibro Tusher All Right Reserved.</p>
+      <hr class="border-secondary mb-4">
+      <div class="row align-items-center">
+        <div class="col-md-6 text-center text-md-start small text-secondary mb-3 mb-md-0">
+          &copy; © Copyright Tibro Tusher All Right Reserved.
         </div>
-
-        <div class="col-md-6 text-end">
-          <p class="text-dark fw-bold fs-5"><em>Original</em></p>
+        <div class="col-md-6 text-center text-md-end small">
+          <a href="#" class="text-secondary text-decoration-none me-3 hover-white">Terms of Service</a>
+          <a href="#" class="text-secondary text-decoration-none hover-white">Privacy Policy</a>
         </div>
       </div>
     </div>

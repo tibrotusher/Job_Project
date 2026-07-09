@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resturant</title>
+
+  <!-- google fonts link here -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
+  <!-- bootstrap link here -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+  <!-- bootstrap icon link here -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+  <!-- custom css link here -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+  <!-- Custom Header Top Bar -->
+  <div class="bg-dark text-light py-2 fs-7">
+    <div class="container d-flex justify-content-between align-items-center">
+      <!-- Contact Info -->
+      <div class="d-flex gap-3 align-items-center">
+        <span><i class="bi bi-envelope me-1 text-primary"></i>tibrotusher@gmail.com</span>
+        <span class="d-none d-md-inline"><i class="bi bi-telephone me-1 text-primary"></i> +880 192577894</span>
+      </div>
+      <!-- Social & Auth -->
+      <div class="d-flex gap-3 align-items-center">
+        <div class="d-none d-sm-flex gap-2">
+          <a href="#" class="text-light text-decoration-none"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="text-light text-decoration-none"><i class="bi bi-twitter-x"></i></a>
+          <a href="#" class="text-light text-decoration-none"><i class="bi bi-youtube"></i></a>
+        </div>
+        <div class="vr mx-1 d-none d-sm-block"></div>
+        <a href="#" class="text-light text-decoration-none fw-bold">Login / Register</a>
+        <a href="#" class="text-light text-decoration-none fw-bold">Reservation Link</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- main navbar section here -->
+  <header id="header" class="sticky-lg-top">
+    <!-- Custom Navigation Bar -->
+    <nav class="navbar navbar-expand-lg bg-danger shadow-sm py-2">
+      <div class="container">
+        <!-- Brand Logo -->
+        <a class="navbar-brand fw-bold text-primary fs-4" href="#">
+          <i class="bi bi-fork-knife" class="fs-1"></i><img src="./assets/img/logo-white.png" alt="logo" class="w-25">
+        </a>
+
+        <!-- Mobile Toggle -->
+        <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse"
+          data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Nav Links -->
+        <div class="collapse navbar-collapse" id="mainNavbar">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fw-medium gap-lg-3">
+            <li class="nav-item"><a class="nav-link text-light" href="index.html">Home</a>
+            </li>
+            <li class="nav-item"><a class="nav-link text-light" href="menu.html">Menu</a></li>
+            <li class="nav-item"><a class="nav-link text-light active" aria-current="page" href="dish.html">Dish
+                Details</a></li>
+            <li class="nav-item"><a class="nav-link text-light" href="reservation.html">Reservation</a></li>
+            <li class="nav-item"><a class="nav-link text-light" href="contact.html">Contact Us</a></li>
+            <li class="nav-item"><a class="nav-link text-light" href="signup.html">Signup</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- breadcrumb section here -->
+  <section id="breadcrumb">
+    <div class="container-fluid">
+      <div class="row">
+        <h3 class="text-uppercase fs-3 text-light">dish details page</h3>
+        <div class="breadcrumbs-caption-btn pt-3">
+          <a href="" class="text-uppercase text-decoration-none text-light fw-bold"><i
+              class="bi bi-house-door-fill"></i>home</a>
+          <span class=" mx-2">/</span>
+          <a href="" class="text-uppercase text-decoration-none fw-bold active">dish details</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Dish Details section here -->
+  <section id="dish_details" class="py-5">
+    <div class="container">
+      <h3 class="text-center fw-bold font-poppins">Our</h3>
+      <h4 class="fw-bold font-poppins text-center text-danger">Dish Informaion</h4>
+      <div class="row g-0 pt-5">
+        <!-- Left: Image Side -->
+        <div class="col-lg-6 position-relative text-start overflow-hidden dish-modal-img-container">
+          <!-- Image -->
+          <img src="./assets/img/catonauts-prawns-53204_1280.jpg" alt="Dish Name"
+            class="img-fluid w-100 h-100 object-fit-cover zoom-img rounded" style="min-height: 400px;">
+
+          <!-- Dietary Badges Overlay -->
+          <div class="position-absolute bottom-0 start-0 m-4 d-flex gap-2 z-1">
+            <span class="badge bg-white text-dark shadow px-3 py-2 rounded-pill"><i
+                class="bi bi-fire text-danger me-1"></i>
+              Spicy</span>
+            <span class="badge bg-white text-dark shadow px-3 py-2 rounded-pill"><i
+                class="bi bi-egg text-warning me-1"></i>
+              Contains Egg</span>
+          </div>
+        </div>
+
+        <!-- Right: Content Side -->
+        <div class="col-lg-6 text-start p-4 p-md-5 d-flex flex-column bg-white">
+
+          <!-- Category & Price -->
+          <div class="d-flex justify-content-between align-items-center mb-2">
+            <h6 class="text-danger fw-bold text-uppercase tracking-wide mb-0">Main Course</h6>
+            <h3 class="text-danger fw-bold mb-0">.00</h3>
+          </div>
+
+          <!-- Title -->
+          <h2 class="fw-bold mb-4 font-serif" id="dishModalLabel">Spicy Garlic Shrimp Pasta</h2>
+
+          <!-- Ratings -->
+          <div class="d-flex align-items-center mb-4 gap-1 text-warning small">
+            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+              class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
+            <span class="text-muted ms-2 fw-medium text-decoration-underline cursor-pointer">4.8 (215 Reviews)</span>
+          </div>
+
+          <!-- Description -->
+          <p class="text-muted lh-lg mb-4 pb-3 border-bottom border-secondary border-opacity-10">Linguine pasta tossed
+            with jumbo shrimp, fresh garlic, red chili flakes, white wine, and a touch of lemon juice, garnished with
+            fresh parsley.</p>
+
+          <!-- Ingredients List -->
+          <div class="mb-5">
+            <h6 class="fw-bold mb-3 font-serif">Main Ingredients</h6>
+            <div class="d-flex flex-wrap gap-2">
+              <span class="badge bg-light text-dark border px-3 py-2 fw-medium">Jumbo Shrimp</span>
+              <span class="badge bg-light text-dark border px-3 py-2 fw-medium">Linguine</span>
+              <span class="badge bg-light text-dark border px-3 py-2 fw-medium">Garlic</span>
+              <span class="badge bg-light text-dark border px-3 py-2 fw-medium">White Wine</span>
+            </div>
+          </div>
+
+          <!-- Add to Cart Action -->
+          <div class="mt-auto pt-3 row g-3">
+            <!-- Quantity Selector -->
+            <div class="col-sm-5">
+              <div class="input-group">
+                <button class="btn btn-outline-secondary px-3 fw-bold" type="button">-</button>
+                <input type="text" class="form-control text-center fw-bold" value="1" aria-label="Quantity">
+                <button class="btn btn-outline-secondary px-3 fw-bold" type="button">+</button>
+              </div>
+            </div>
+            <!-- Submit -->
+            <div class="col-sm-7">
+              <button class="btn btn-danger w-100 rounded-pill py-2 fw-bold shadow-sm hover-lift"><i
+                  class="bi bi-cart-plus me-2"></i>Add to Order</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- dish description & nutrition section -->
+  <section id="dish_nutrition" class="py-5 bg-light">
+    <div class="container">
+      <div class="card border-0 shadow-sm h-100 w-100 rounded">
+        <div class="row g-4">
+          <div class="col-md-6">
+            <div class="content">
+              <h4 class="fw-bold text-center font-poppins pt-3 text-danger fs-3">Dish Description</h4>
+              <div class="card border-0 shadow-md h-100 rounded pt-3">
+                <div class="d-flex flex-column justify-content-center align-items-center overflow-hidden">
+                  <img src="./assets/img/meat-burger.png" alt="" class="img-fluid rounded-circle w-50 zoom-img">
+                </div>
+                <div class="card-body fw-medium font-poppins">
+                  <p class="text-break fs-5">A standard single-patty meat burger averages 418 calories and
+                    provides a balanced profile of protein and carbohydrates.
+                    It is a classic fast-food and comfort dish found worldwide, consisting of a grilled ground meat
+                    patty tucked inside a
+                    sliced bun, usually accompanied by various fresh toppings and savory condiments.The traditional
+                    burger
+                    features a seasoned ground meat patty cooked via grilling, pan-searing, or smashing. It is placed
+                    inside a soft round
+                    bun (such as sesame or brioche). Typical fresh layers include lettuce, sliced tomatoes, onions, and
+                    pickles. Popular
+                    condiments like ketchup, mustard, and mayonnaise add moisture and tanginess.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="content">
+              <h4 class="fw-bold text-center font-poppins pt-3 text-danger fs-3">Dish Nutrition Info</h4>
+              <div class="card border-0 shadow-md h-100 rounded pt-3">
+                <div class="card-body fw-medium font-poppins">
+                  <p class="text-break fs-5">Nutritional values vary significantly based on the size of the patty, fat
+                    percentage of the meat, and choice of
+                    toppings. Below is the average nutritional profile for a standard single hamburger (approx. 150g):
+                  </p>
+
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">Nutrient</th>
+                        <th scope="col">Amount Per Serving</th>
+                        <th scope="col">% Daily Value (DV)</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Calories</td>
+                        <td>418 kcal</td>
+                        <td>21%</td>
+                      </tr>
+                      <tr>
+                        <td>protein</td>
+                        <td>25.4 g</td>
+                        <td>51%</td>
+                      </tr>
+                      <tr>
+                        <td>Total Fat</td>
+                        <td>20.9g</td>
+                        <td>27%</td>
+                      </tr>
+                      <tr>
+                        <td>Saturated Fat</td>
+                        <td>7g</td>
+                        <td>35%</td>
+                      </tr>
+                      <tr>
+                        <td>Carbohydrates</td>
+                        <td>30g</td>
+                        <td>11%</td>
+                      </tr>
+                      <tr>
+                        <td>Dietary Fiber</td>
+                        <td>1.0g</td>
+                        <td>4%</td>
+                      </tr>
+                      <tr>
+                        <td>Sugars</td>
+                        <td>4.4g</td>
+                        <td>-</td>
+                      </tr>
+                      <tr>
+                        <td>Sodium</td>
+                        <td>515g</td>
+                        <td>22%</td>
+                      </tr>
+                      <tr>
+                        <td>Iron</td>
+                        <td>2.5g</td>
+                        <td>14%</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Special Dishes Section -->
+  <section class="py-5 bg-light-subtle">
+    <div class="container py-4">
+
+      <div class="text-center mb-5">
+        <h6 class="text-danger fw-bold text-uppercase tracking-wide mb-2">Our Signature</h6>
+        <h2 class="display-6 fw-bold mb-0 font-serif">Special Dishes</h2>
+      </div>
+
+      <div class="row g-4">
+        <!-- Dish 1 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card border-0 shadow-sm rounded-4 h-100 hover-lift overflow-hidden position-relative">
+            <!-- Price Badge -->
+            <div class="position-absolute top-0 end-0 m-3 z-1">
+              <span class="badge bg-danger rounded-pill px-3 py-2 fs-6 shadow">.99</span>
+            </div>
+
+            <!-- Image -->
+            <div class="overflow-hidden" style="height: 240px;">
+              <img src="./assets/img/meat-burger.png" alt="Smoked BBQ Ribs"
+                class="img-fluid w-100 h-100 object-fit-cover dish-img">
+            </div>
+
+            <!-- Content -->
+            <div class="card-body p-4 p-xl-5 d-flex flex-column">
+              <!-- Stars -->
+              <div class="d-flex align-items-center mb-3 gap-1 text-warning small">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                  class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
+                <span class="text-muted ms-2">(120)</span>
+              </div>
+
+              <h4 class="fw-bold mb-3 font-serif">Meat Burger</h4>
+              <p class="text-muted mb-4 pb-2">Burger for the body is not enough there must be a burger for the soul.</p>
+
+              <a href="#" class="btn btn-outline-danger rounded-pill fw-bold w-100 mt-auto py-2 hover-danger-fill">Order
+                Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dish 2 (Featured) -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card border-0 shadow-sm rounded-4 h-100 hover-lift overflow-hidden position-relative">
+            <!-- Price Badge -->
+            <div class="position-absolute top-0 end-0 m-3 z-1">
+              <span class="badge bg-danger rounded-pill px-3 py-2 fs-6 shadow">.50</span>
+            </div>
+            <!-- Featured Badge -->
+            <div class="overflow-hidden" style="height: 240px;">
+              <img src="./assets/img/fish-burger.png" alt="Power Veggie Bowl"
+                class="img-fluid w-100 h-100 object-fit-cover dish-img">
+            </div>
+
+            <div class="card-body p-4 p-xl-5 d-flex flex-column">
+              <div class="d-flex align-items-center mb-3 gap-1 text-warning small">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                  class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                <span class="text-muted ms-2">(340)</span>
+              </div>
+
+              <h4 class="fw-bold mb-3 font-serif">Fish Burger</h4>
+              <p class="text-muted mb-4 pb-2">Life is like a burger the more you add to it, the better it becomes.</p>
+
+              <a href="#" class="btn btn-danger rounded-pill fw-bold w-100 mt-auto py-2 shadow-sm hover-lift">Order
+                Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dish 3 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card border-0 shadow-sm rounded-4 h-100 hover-lift overflow-hidden position-relative">
+            <div class="position-absolute top-0 end-0 m-3 z-1">
+              <span class="badge bg-danger rounded-pill px-3 py-2 fs-6 shadow">.99</span>
+            </div>
+
+            <div class="overflow-hidden" style="height: 240px;">
+              <img src="./assets/img/veggie-burger.png" alt="Classic Margherita"
+                class="img-fluid w-100 h-100 object-fit-cover dish-img">
+            </div>
+
+            <div class="card-body p-4 p-xl-5 d-flex flex-column">
+              <div class="d-flex align-items-center mb-3 gap-1 text-warning small">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                  class="bi bi-star-fill"></i><i class="bi bi-star"></i>
+                <span class="text-muted ms-2">(85)</span>
+              </div>
+
+              <h4 class="fw-bold mb-3 font-serif">Veggie Burger</h4>
+              <p class="text-muted mb-4 pb-2">Roses are red, violets are blue. The burger costs less than dinner for
+                two.</p>
+
+              <a href="#" class="btn btn-outline-danger rounded-pill fw-bold w-100 mt-auto py-2 hover-danger-fill">Order
+                Now</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- footer section here -->
+  <footer id="footer_section" class=" bg-danger-subtle py-5 overflow-hidden">
+    <div class="container">
+      <div class="footer-content text-center">
+        <img src="./assets/img/logo-dark.png" alt="logo" class="w-25">
+      </div>
+      <div class="row py-5">
+        <div class="col-md-6 text-center">
+          <h6 class="text-muted text-uppercase fw-bold tracking-wide pb-3">Contact Info</h6>
+          <ul class="list-unstyled text-dark">
+            <li class="">
+              <i class="bi bi-geo-alt fs-5 text-primary"></i>
+              <span>DB Road, Gaibandha,<br> Rangpur</span>
+            </li>
+            <li class="">
+              <i class="bi bi-envelope fs-5 text-primary"></i>
+              <span>tibrotusher@gmail.com.com</span>
+            </li>
+            <li class="">
+              <i class="bi bi-telephone fs-5 text-primary"></i>
+              <span>+880 192577894</span>
+            </li>
+            <li class="">
+              <span class="fw-bold text-dark">E: bookings@grandburger.com</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-md-6 text-center">
+          <h6 class="text-muted pb-3 text-uppercase fw-bold tracking-wide">Quick Links</h6>
+          <ul class="list-unstyled gap-2">
+            <li class=""><a href="#" class="text-dark text-decoration-none"><i
+                  class="bi bi-facebook fs-5 text-primary"></i>
+                Facebook</a></li>
+            <li class=""><a href="#" class="text-dark text-decoration-none"><i
+                  class="bi bi-linkedin fs-5 text-info"></i>
+                Linkedin</a></li>
+            <li class=""><a href="#" class="text-dark text-decoration-none"><i
+                  class="bi bi-whatsapp fs-5 text-success"></i>
+                Whatsapp</a></li>
+            <li class=""><a href="#" class="text-dark text-decoration-none"><i
+                  class="bi bi-instagram fs-5 text-danger"></i>
+                Instagram</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr class="border-secondary mb-4">
+      <div class="row align-items-center">
+        <div class="col-md-6 text-center text-md-start small text-secondary mb-3 mb-md-0">
+          &copy; © Copyright Tibro Tusher All Right Reserved.
+        </div>
+        <div class="col-md-6 text-center text-md-end small">
+          <a href="#" class="text-secondary text-decoration-none me-3 hover-white">Terms of Service</a>
+          <a href="#" class="text-secondary text-decoration-none hover-white">Privacy Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- bootstrap js link here -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+    integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -67,9 +67,9 @@
             <li class="nav-item"><a class="nav-link text-light" href="index.html">Home</a>
             </li>
             <li class="nav-item"><a class="nav-link text-light" href="menu.html">Menu</a></li>
+            <li class="nav-item"><a class="nav-link text-light" href="dish.html">Dish Details</a></li>
             <li class="nav-item"><a class="nav-link text-light active" aria-current="page"
                 href="reservation.html">Reservation</a></li>
-            <li class="nav-item"><a class="nav-link text-light" href="about.html">About Us</a></li>
             <li class="nav-item"><a class="nav-link text-light" href="contact.html">Contact Us</a></li>
             <li class="nav-item"><a class="nav-link text-light" href="signup.html">Signup</a></li>
           </ul>
@@ -78,29 +78,181 @@
     </nav>
   </header>
 
+  <!-- breadcrumb section here -->
+  <section id="breadcrumb">
+    <div class="container-fluid">
+      <div class="row">
+        <h3 class="text-uppercase fs-3 text-light">reservation Page</h3>
+        <div class="breadcrumbs-caption-btn pt-3">
+          <a href="" class="text-uppercase text-decoration-none text-light fw-bold"><i
+              class="bi bi-house-door-fill"></i>home</a>
+          <span class=" mx-2">/</span>
+          <a href="" class="text-uppercase text-decoration-none fw-bold active">Reservation</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reservation Section -->
+  <section class="py-5 position-relative overflow-hidden"
+    style="background-image: url('restaurant-bg.jpg'); background-size: cover; background-position: center; background-attachment: fixed;">
+    <!-- Dark Overlay -->
+    <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-75"></div>
+
+    <div class="container position-relative z-1 py-5">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 col-xl-6">
+
+          <!-- Booking Card -->
+          <div class="card border-0 rounded-4 shadow-lg overflow-hidden">
+            <div class="card-header bg-danger text-white text-center p-4 border-0">
+              <h3 class="fw-bold mb-0 font-serif">Book a Table</h3>
+              <p class="text-white-50 small mb-0 mt-2">Reserve your spot and enjoy a wonderful dining experience.</p>
+            </div>
+            <div class="card-body p-4 p-md-5">
+              <form id="reservationForm">
+                <div class="row g-4">
+
+                  <!-- Name -->
+                  <div class="col-md-4">
+                    <label class="form-label fw-bold text-dark small text-uppercase tracking-wide">Full Name</label>
+                    <div class="input-group">
+                      <span class="input-group-text bg-light border-end-0"><i
+                          class="bi bi-person text-muted"></i></span>
+                      <input type="text" class="form-control bg-light border-start-0 ps-0 focus-ring focus-ring-danger"
+                        placeholder="Enter your name" required>
+                    </div>
+                  </div>
+
+                  <!-- Phone -->
+                  <div class="col-md-4">
+                    <label class="form-label fw-bold text-dark small text-uppercase tracking-wide">Phone Number</label>
+                    <div class="input-group">
+                      <span class="input-group-text bg-light border-end-0"><i
+                          class="bi bi-telephone text-muted"></i></span>
+                      <input type="tel" class="form-control bg-light border-start-0 ps-0 focus-ring focus-ring-danger"
+                        placeholder="Enter your phone no" required>
+                    </div>
+                  </div>
+
+                  <!-- email -->
+                  <div class="col-md-4">
+                    <label class="form-label fw-bold text-dark small text-uppercase tracking-wide">Email</label>
+                    <div class="input-group">
+                      <span class="input-group-text bg-light border-end-0"><i
+                          class="bi bi-envelope-open text-muted"></i></span>
+                      <input type="text" class="form-control bg-light border-start-0 ps-0 focus-ring focus-ring-danger"
+                        placeholder="Enter your email" required>
+                    </div>
+                  </div>
+
+                  <!-- Guests -->
+                  <div class="col-md-4">
+                    <label class="form-label fw-bold text-dark small text-uppercase tracking-wide">Guests</label>
+                    <div class="input-group">
+                      <span class="input-group-text bg-light border-end-0"><i
+                          class="bi bi-people text-muted"></i></span>
+                      <select class="form-select bg-light border-start-0 ps-0 focus-ring focus-ring-danger">
+                        <option value="1">1 Person</option>
+                        <option value="2" selected>2 People</option>
+                        <option value="3">3 People</option>
+                        <option value="4">4 People</option>
+                        <option value="5">5+ People</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <!-- Date -->
+                  <div class="col-md-4">
+                    <label class="form-label fw-bold text-dark small text-uppercase tracking-wide">Date</label>
+                    <div class="input-group">
+                      <span class="input-group-text bg-light border-end-0"><i
+                          class="bi bi-calendar-event text-muted"></i></span>
+                      <input type="date" class="form-control bg-light border-start-0 ps-0 focus-ring focus-ring-danger"
+                        required>
+                    </div>
+                  </div>
+
+                  <!-- Time -->
+                  <div class="col-md-4">
+                    <label class="form-label fw-bold text-dark small text-uppercase tracking-wide">Time</label>
+                    <div class="input-group">
+                      <span class="input-group-text bg-light border-end-0"><i class="bi bi-clock text-muted"></i></span>
+                      <select class="form-select bg-light border-start-0 ps-0 focus-ring focus-ring-danger">
+                        <option value="18:00">6:00 PM</option>
+                        <option value="18:30">6:30 PM</option>
+                        <option value="19:00" selected>7:00 PM</option>
+                        <option value="19:30">7:30 PM</option>
+                        <option value="20:00">8:00 PM</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <!-- Special Requests -->
+                  <div class="col-12">
+                    <label class="form-label fw-bold text-dark small text-uppercase tracking-wide">Special
+                      Requests</label>
+                    <textarea class="form-control bg-light focus-ring focus-ring-danger" rows="3"
+                      placeholder="Any allergies or special occasions?"></textarea>
+                  </div>
+
+                  <!-- Submit Button -->
+                  <div class="col-12 mt-4">
+                    <button type="button" class="btn btn-danger w-100 rounded-pill py-3 fw-bold fs-5 shadow hover-lift"
+                      data-bs-toggle="modal" data-bs-target="#reservationModal">Book Table</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Confirmation Modal -->
+  <div class="modal fade" id="reservationModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content border-0 rounded-4 shadow-lg text-center p-4 p-md-5">
+        <div class="mb-4">
+          <div
+            class="bg-success text-white rounded-circle d-inline-flex align-items-center justify-content-center mx-auto"
+            style="width: 80px; height: 80px;">
+            <i class="bi bi-check-lg fs-1"></i>
+          </div>
+        </div>
+        <h3 class="fw-bold mb-3 font-serif">Reservation Confirmed!</h3>
+        <p class="text-muted mb-4">Thank you for choosing us. Your table has been successfully booked. We've sent a
+          confirmation email to you.</p>
+        <button type="button" class="btn btn-dark rounded-pill px-5 py-2 fw-bold" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+
   <!-- footer section here -->
-  <footer id="footer_section" class=" bg-body py-5 overflow-hidden">
+  <footer id="footer_section" class=" bg-danger-subtle py-5 overflow-hidden">
     <div class="container">
       <div class="footer-content text-center">
         <img src="./assets/img/logo-dark.png" alt="logo" class="w-25">
       </div>
       <div class="row py-5">
         <div class="col-md-6 text-center">
-          <h6 class="text-muted text-uppercase fw-bold tracking-wide">Contact Info</h6>
+          <h6 class="text-muted text-uppercase fw-bold tracking-wide pb-3">Contact Info</h6>
           <ul class="list-unstyled text-dark">
-            <li class="pb-3">
+            <li class="">
               <i class="bi bi-geo-alt fs-5 text-primary"></i>
               <span>DB Road, Gaibandha,<br> Rangpur</span>
             </li>
-            <li class="pb-3">
+            <li class="">
               <i class="bi bi-envelope fs-5 text-primary"></i>
               <span>tibrotusher@gmail.com.com</span>
             </li>
-            <li class="pb-3">
+            <li class="">
               <i class="bi bi-telephone fs-5 text-primary"></i>
               <span>+880 192577894</span>
             </li>
-            <li class="pb-3">
+            <li class="">
               <span class="fw-bold text-dark">E: bookings@grandburger.com</span>
             </li>
           </ul>
@@ -109,24 +261,29 @@
         <div class="col-md-6 text-center">
           <h6 class="text-muted pb-3 text-uppercase fw-bold tracking-wide">Quick Links</h6>
           <ul class="list-unstyled gap-2">
-            <li class="pb-3"><a href="#" class="text-dark text-decoration-none"><i
-                  class="bi bi-facebook fs-5 text-primary"></i> Facebook</a></li>
-            <li class="pb-3"><a href="#" class="text-dark text-decoration-none"><i
-                  class="bi bi-linkedin fs-5 text-info"></i> Linkedin</a></li>
-            <li class="pb-3"><a href="#" class="text-dark text-decoration-none"><i
-                  class="bi bi-whatsapp fs-5 text-success"></i> Whatsapp</a></li>
-            <li class="pb-3"><a href="#" class="text-dark text-decoration-none"><i
-                  class="bi bi-instagram fs-5 text-danger"></i> Instagram</a></li>
+            <li class=""><a href="#" class="text-dark text-decoration-none"><i
+                  class="bi bi-facebook fs-5 text-primary"></i>
+                Facebook</a></li>
+            <li class=""><a href="#" class="text-dark text-decoration-none"><i
+                  class="bi bi-linkedin fs-5 text-info"></i>
+                Linkedin</a></li>
+            <li class=""><a href="#" class="text-dark text-decoration-none"><i
+                  class="bi bi-whatsapp fs-5 text-success"></i>
+                Whatsapp</a></li>
+            <li class=""><a href="#" class="text-dark text-decoration-none"><i
+                  class="bi bi-instagram fs-5 text-danger"></i>
+                Instagram</a></li>
           </ul>
         </div>
       </div>
-      <div class="row py-5">
-        <div class="col-md-6 text-start">
-          <p class="text-dark fs-6">© Copyright Tibro Tusher All Right Reserved.</p>
+      <hr class="border-secondary mb-4">
+      <div class="row align-items-center">
+        <div class="col-md-6 text-center text-md-start small text-secondary mb-3 mb-md-0">
+          &copy; © Copyright Tibro Tusher All Right Reserved.
         </div>
-
-        <div class="col-md-6 text-end">
-          <p class="text-dark fw-bold fs-5"><em>Original</em></p>
+        <div class="col-md-6 text-center text-md-end small">
+          <a href="#" class="text-secondary text-decoration-none me-3 hover-white">Terms of Service</a>
+          <a href="#" class="text-secondary text-decoration-none hover-white">Privacy Policy</a>
         </div>
       </div>
     </div>

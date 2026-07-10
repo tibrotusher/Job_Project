@@ -22,12 +22,16 @@
 }
 
 #breadcrumb {
-  background: url('../img/breadcrumb.jpg');
+  background: rgba(0, 0, 0, 0.4) url('../img/breadcrumb.jpg');
   background-repeat: no-repeat;
   height: 40vh;
   background-size: cover;
   color: white;
-  background-position: center;
+  background-position: top right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-blend-mode: multiply;
 }
 
 .text-break {

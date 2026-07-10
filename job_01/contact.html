@@ -78,6 +78,100 @@
     </div>
   </section>
 
+  <!-- contact section here -->
+  <section id="contact" class="py-5 bg-light overflow-hidden">
+    <div class="container overflow-hidden">
+      <div class="row g-5 overflow-hidden">
+
+        <!-- Archive Submission Form Column -->
+        <div class="col-lg-8">
+          <div class="card shadow-sm p-4">
+            <h2 class="mb-4">Archive Inquiry & Contribution</h2>
+            <p class="text-muted">Use this form to submit inquiries, provide feedback, or contribute materials to the
+              archive.</p>
+
+            <form action="#" method="POST" enctype="multipart/form-data">
+              <div class="row g-3">
+                <!-- Name Field -->
+                <div class="col-md-6">
+                  <label for="userName" class="form-label fw-semibold">Full Name</label>
+                  <input type="text" class="form-control" id="userName" name="name" placeholder="Enter your full name"
+                    required>
+                </div>
+
+                <!-- Email Field -->
+                <div class="col-md-6">
+                  <label for="userEmail" class="form-label fw-semibold">Email Address</label>
+                  <input type="email" class="form-control" id="userEmail" name="email" placeholder="Enter your email"
+                    required>
+                </div>
+
+                <!-- Subject Field -->
+                <div class="col-12">
+                  <label for="msgSubject" class="form-label fw-semibold">Subject</label>
+                  <select class="form-select" id="msgSubject" name="subject" required>
+                    <option value="" selected>Choose a reason for contact...</option>
+                    <option value="general_inquiry">General Inquiry</option>
+                    <option value="feedback">Feedback</option>
+                    <option value="material_contribution">Material Contribution (Donation)</option>
+                  </select>
+                </div>
+
+                <!-- Message Field -->
+                <div class="col-12">
+                  <label for="userMessage" class="form-label fw-semibold">Message</label>
+                  <textarea class="form-control" id="userMessage" name="message" rows="5"
+                    placeholder="Type your inquiry or details about your contribution here..." required></textarea>
+                </div>
+
+                <!-- File Upload Field -->
+                <div class="col-12">
+                  <label for="fileUpload" class="form-label fw-semibold">Upload Documents or Photographs</label>
+                  <input class="form-control" type="file" id="fileUpload" name="attachments" multiple
+                    aria-describedby="fileHelp">
+
+                </div>
+
+                <!-- Submit Button -->
+                <div class="col-12 pt-2">
+                  <button type="submit" class="btn btn-primary px-4 py-2">Submit to Archive</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <!-- Contact Information Sidebar Column -->
+        <div class="col-lg-4">
+          <div class="card border-0 bg-dark text-white p-4 h-100">
+            <h3 class="h4 mb-4 border-bottom border-secondary pb-2">Direct Contact</h3>
+            <p class="text-light opacity-75 small mb-4">For urgent inquiries or large historical collection donations,
+              reach
+              out directly to our administration team.</p>
+
+            <div class="mb-4">
+              <h5 class="h6 text-uppercase tracking-wider text-muted mb-1">Email</h5>
+              <a href="mailto:archive-admin@example.com"
+                class="text-white text-decoration-none">tibrotusher@gmail.com</a>
+            </div>
+
+            <div class="mb-4">
+              <h5 class="h6 text-uppercase tracking-wider text-muted mb-1">Phone</h5>
+              <a href="tel:+8802XXXXXXX" class="text-white text-decoration-none">+880 192577894</a>
+            </div>
+
+            <div class="mb-4">
+              <h5 class="h6 text-uppercase tracking-wider text-muted mb-1">Office Hours</h5>
+              <p class="mb-0 text-light opacity-75">Sunday – Thursday</p>
+              <p class="mb-0 text-light opacity-75">9:00 AM – 5:00 PM (Local Time)</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
   <!-- Big Custom Footer -->
   <footer class="bg-dark text-light pt-5 pb-4">
     <div class="container">
